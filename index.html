@@ -1,0 +1,2356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckUup</title>
+    <link rel="stylesheet" href="./assets/styles/output.css" />
+    <link rel="stylesheet" href="./assets/styles/custom.css" />
+  </head>
+  <body class="inter relative bg-[#eeeeee]">
+    <div
+      class="fixed left-[62%] sm:left-[39%] top-4 z-55 opacity-0 transition-all duration-500 delay-50 nav-hide md:hidden"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 512"
+        width="30"
+        height="30"
+        fill="#FDC553"
+      >
+        <!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+        />
+      </svg>
+    </div>
+    <div
+      class="fixed left-5 top-4 z-54 transition-all duration-500 nav-show md:hidden"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30"
+        width="30"
+        viewBox="0 0 448 512"
+        fill="#0098DB"
+      >
+        <!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+        />
+      </svg>
+    </div>
+
+    <nav
+      class="fixed h-full z-50 bg-black/75 overflow-hidden transition-all duration-500 w-0 md:hidden"
+    >
+      <div class="bg-black/50 absolute w-full h-full"></div>
+      <div class="relative h-full py-5 w-[75vw] sm:w-[50vw]">
+        <div class="w-fit mx-auto mt-8">
+          <img src="./assets/images/CheckUup logo 3.png" alt="" class="" />
+        </div>
+        <div class="flex flex-col mt-[10rem] pl-6">
+          <p class="text-white text-[1.25rem] font-semibold mb-12">
+            Corporate Wellness
+          </p>
+          <p class="text-white text-[1.25rem] font-semibold mb-12">Partners</p>
+          <p class="text-white text-[1.25rem] font-semibold mb-12">Contact</p>
+        </div>
+        <div class="absolute bottom-7 w-full text-center">
+          <button
+            class="bg-primary text-white w-[80%] p-3 text-[1.2rem] font-semibold rounded-md"
+          >
+            Join the Movement
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="min-h-screen">
+      <header class="md:flex md:items-center md:relative md:overflow-hidden md:bg-white md:pt-[5.5rem] -z-4">
+        <nav class="hidden md:flex w-full bg-white justify-between items-center absolute top-0 py-3 px-8 z-50">
+          <div class="flex min-w-[470px] justify-between items-center">
+            <div class="w-[7rem]">
+                        <img src="./assets/images/CheckUup logo 3.png" alt="" class="w-full pb-2.5" />
+            </div>
+            <div class="flex text-[.9rem]">
+              <div class="w-fit px-3">Corporate Wellness</div>
+              <div class="w-fit px-3">Partner</div>
+              <div class="w-fit px-3">Contact</div>
+            </div>
+          </div>
+          <button
+            class="bg-primary text-white w-[12rem] p-2 font-semibold rounded-md"
+          >
+            Join the Movement
+          </button>
+        </nav>
+        <div
+          class="h-[50vh] md:min-h-[30vh] md:max-h-[400px] w-full overflow-hidden bg-[url(../images/checkuup-img1.png)] bg-bottom bg-cover sm:bg-position-[center_top_75%] md:bg-position-[.5rem] md:order-2 md:w-1/2 md:-z-3"
+        ></div>
+        <div id="main-intro" class="pt-6 px-6 md:pl-14 md:pr-0 bg-white md:order-1 md:h-[55vh] md:min-h-[30vh] md:max-h-[400px] md:flex md:justify-end md:items-center md:w-1/2 md:relative">
+          <div class="hidden md:block absolute top-[50%] -translate-y-[50%] -right-[15%] bg-white w-[185%] h-[185%] -z-2 rounded-[150%]"></div>
+          <div class="md:h-fit">
+          <h1 class="text-secondary text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold my-2">CheckUup</h1>
+          <p class="text-primary md:text-[1.25rem] lg:text-[1.5rem] font-bold mb-4">
+            Because Mental Wellness Matters
+          </p>
+          <p class="text-[.875rem] lg:text-[1rem] max-w-[500px]">
+            Life happens—stress, anxiety, burnout, isolation. Yet, while we
+            quickly respond to physical health issues, mental wellness often
+            goes unnoticed. CheckUup changes that by providing a proactive,
+            tech-driven way to support mental well-being before it becomes a
+            crisis. CheckUup is here to change that.
+          </p>
+          <button
+            class="w-3/4 py-2 px-6 mt-8 mb-6 md:mb-[4.5rem] bg-primary text-white md:text-[1.25rem] lg:text-[1.5rem] rounded-md font-semibold max-w-[270px]"
+          >
+            Join The Movement
+          </button>
+        </div>
+        </div>
+      </header>
+      <section id="CEO" class="lg:flex">
+        <div id="CEO-video" class="px-14 py-10 lg:w-1/2">
+          <div
+            class="youtube-thumb relative w-full max-w-[450px] rounded-4xl cursor-pointer overflow-hidden mx-auto"
+            data-video-id="buY9SPzyv-A"
+          >
+            <img
+              class="w-full object-cover"
+              src="./assets/images/CEO.png"
+              alt="Video thumbnail"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button class="">
+                <svg
+                  width="32"
+                  height="35"
+                  viewBox="0 0 32 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.894043 35L31.1062 17.5L0.894043 0V35Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="CEO-message"
+          class="bg-white rounded-4xl py-6 px-6 md:mx-12 mb-[7rem] lg:w-1/2"
+        >
+          <h2 class="text-primary text-center text-[1.25rem] font-bold mt-3 mb-3">
+            The Heart Behind Checkup
+          </h2>
+          <p
+            class="text-[#1a1a1a] text-center text-[.9375rem] font-semibold mb-6"
+          >
+            A Message from Our Founder
+          </p>
+          <p class="text-[1rem]/[20px] mb-3 text-[#4a4a4a]">
+            Life happens to all of us—unexpected challenges, silent struggles,
+            moments of isolation. Yet, when it comes to mental wellness, too
+            often, we suffer in silence, waiting for someone to notice.
+          </p>
+          <p class="text-[1rem]/[20px] mb-3 text-[#4a4a4a]">
+            CheckUup was born from a deeply personal story—one that could have
+            ended in tragedy. A loved one withdrew, overwhelmed by life’s
+            hardships. He stopped talking, stopped reaching out—until one friend,
+            sensing something was wrong, took action. That decision saved his
+            life.
+          </p>
+          <p class="text-[1rem]/[20px] mb-3 text-[#4a4a4a]">
+            But not everyone gets that check-in. Many people go unnoticed until
+            it’s too late. That’s why CheckUup exists—to ensure no one struggles
+            alone.
+          </p>
+          <p class="text-[1rem]/[20px] mb-3 text-[#4a4a4a]">
+            By detecting subtle behavioral changes, CheckUup alerts trusted
+            friends and family, helping them check in when it matters most.
+            Because sometimes, one message, one call, one moment of care can be
+            the difference between despair and hope.
+          </p>
+          <p class="text-primary text-[.9375] font-semibold leading-[20px] mt-8">
+            Join the movement. Let’s check in, look out, and lift you up.
+          </p>
+          <p
+            class="text-black font-light text-right italic text-[1rem]/[20px] mt-4"
+          >
+            Ebun, Founder & CEO
+          </p>
+        </div>
+      </section>
+      <section id="whatIsCheckuupLg" class="md:flex md:items-center">
+        <div id="whatIsCheckuup" class="px-6 md:pr-4 mb-4 md:w-1/2">
+          <div class="mb-10 flex justify-center">
+            <img src="./assets/images/checkuup-img-2.png" alt="" class="" />
+          </div>
+          <h3 class="font-bold text-[1.25rem] text-primary text-center mb-4">
+            What is CheckUup?
+          </h3>
+          <p class="text-[.875rem]/[20px] text-1a1a1a mb-6">
+            CheckUup is more than an app—it’s a movement. A lifeline for those
+            silent struggles, a proactive approach to mental wellness, and a way
+            to ensure that no one slips through the cracks.
+          </p>
+          <p class="text-[.875rem]/[20px] text-1a1a1a mb-6">
+            We’re here to transform how society approaches mental health by
+            fostering a culture of care, connection, and accountability. Using
+            smart technology, CheckUup detects shifts in behavior and alerts
+            trusted contacts, offering support before things escalate.
+          </p>
+          <p class="text-[.875rem]/[20px] text-1a1a1a mb-6">
+            With CheckUup, you’re never alone. Whether it’s a gentle nudge from a
+            loved one or actionable insights into your emotional well-being, we’ve
+            got your back.
+          </p>
+        </div>
+        <div
+          id="yellowIconFlex"
+          class="my-9 flex flex-wrap px-6 md:pr-4 max-w-full justify-between md:w-1/2"
+        >
+          <div class="w-[48%] md:max-w-[200px] pr-4 mb-8">
+            <div class="mb-5 pt-[3px]">
+              <img
+                src="./assets/images/yellow-icon-1.png"
+                alt=""
+                class="w-[36px] h-[41px]"
+              />
+            </div>
+            <div class="font-bold mb-3 text-[.875rem]">
+              Proactive Mental Health Support
+            </div>
+            <p class="text-[.75rem]">
+              Not just crisis response, but early detection.
+            </p>
+          </div>
+          <div class="w-[48%] md:max-w-[200px] pr-4 mb-8">
+            <div class="mb-5">
+              <img
+                src="./assets/images/yellow-icon-2.png"
+                alt=""
+                class="w-[45px] h-[44px]"
+              />
+            </div>
+            <div class="font-bold mb-3 text-[.875rem]">AI-Driven Insights</div>
+            <p class="text-[.75rem]">
+              Smart behavioral analysis to track subtle emotional changes.
+            </p>
+          </div>
+          <div class="w-[48%] md:max-w-[200px] pr-4 mb-8">
+            <div class="mb-5 pt-[4px]">
+              <img
+                src="./assets/images/yellow-icon-3.png"
+                alt=""
+                class="w-[44px] h-[40px]"
+              />
+            </div>
+            <div class="font-bold mb-3 text-[.875rem]">Trusted Circle Alerts</div>
+            <p class="text-[.75rem]">
+              Personalized check-ins from those who care most.
+            </p>
+          </div>
+          <div class="w-[48%] md:max-w-[200px] pr-4 mb-8">
+            <div class="mb-5 pt-[4px]">
+              <img
+                src="./assets/images/yellow-icon-4.png"
+                alt=""
+                class="w-[44px] h-[40px]"
+              />
+            </div>
+            <div class="font-bold mb-3 text-[.875rem]">
+              Discreet & Non-Intrusive
+            </div>
+            <p class="text-[.75rem]">No stigma, just support when you need it.</p>
+          </div>
+          <div class="w-[48%] md:max-w-[200px] pr-4 mb-8">
+            <div class="mb-5">
+              <img src="./assets/images/yellow-icon-5.png" alt="" class="" />
+            </div>
+            <div class="font-bold mb-3 text-[.875rem]">
+              Empowering You & Your Loved Ones
+            </div>
+            <p class="text-[.75rem]">
+              Because mental wellness is a shared responsibility.
+            </p>
+          </div>
+          <div class="w-[48%] md:max-w-[200px] pr-4 mb-8">
+            <div class="mb-5">
+              <img src="./assets/images/yellow-icon-6.png" alt="" class="" />
+            </div>
+            <div class="font-bold mb-3 text-[.875rem]">
+              Community-Driven Support
+            </div>
+            <p class="text-[.75rem]">
+              share experiences, find encouragement, and connect with like-minded
+              individuals.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="whyCheckuup"
+        class="bg-white mt-5 mb-[15rem] md:mb-[5rem] mx-5 pt-4 md:py-6 px-4 sm:px-8 rounded-2xl relative md:flex md:items-center md:justify-around"
+      >
+      <div class="md:max-w-[430px]">
+        <div class="mb-6">
+          <h3 class="text-primary text-[1.25rem] font-semibold my-4">
+            Why CheckUup?
+          </h3>
+          <p class="text-[.75rem] mb-3">
+            Most mental health struggles start subtly. Missed messages, social
+            withdrawal, disrupted routines—signs that often go unnoticed.
+          </p>
+          <p class="text-[.75rem] mb-5">
+            CheckUup uses intelligent behavioral tracking to detect these shifts
+            and notify your trusted circle, ensuring support before struggles
+            escalate.
+          </p>
+          <ul class="list-disc list-inside text-[.75rem] pl-2">
+            <li class="font-semibold mb-2">
+              Mental wellness should never be an afterthought.
+            </li>
+            <li class="font-semibold mb-2">
+              Because small changes can signal big struggles.
+            </li>
+            <li class="font-semibold mb-2">
+              Because one message—one check-in—can save a life.
+            </li>
+          </ul>
+        </div>
+        <div class="mb-8">
+          <h3 class="text-primary text-[1.25rem] font-semibold my-4">
+            Features That Care
+          </h3>
+          <ul class="list-disc list-inside text-[.75rem] pl-2">
+            <li class="font-semibold mb-2">
+              Mood Tracker: Log your feelings with a tap
+            </li>
+            <li class="font-semibold mb-2">
+              Behavior Insights: Spot patterns in your daily habits
+            </li>
+            <li class="font-semibold mb-2">
+              SOS Alerts: Instantly reach out to your support network
+            </li>
+            <li class="font-semibold mb-2">
+              Resource Library: Discover coping strategies and expert advice
+            </li>
+          </ul>
+        </div>
+        <div class="flex max-w-[380px]">
+          <div class="w-[50%] pr-3">
+            <img
+              src="./assets/images/google-play.png"
+              alt=""
+              class="max-w-full"
+            />
+          </div>
+          <div class="w-[50%] pr-3">
+            <img
+              src="./assets/images/app-store.png"
+              alt=""
+              class="max-w-full"
+            />
+          </div>
+        </div>
+      </div>
+        <div class="h-[19rem] relative img-cont-cont md:w-2/5">
+          <div
+            class="absolute left-[50%] -translate-x-[50%] top-[13%] md:top-[50%] md:-translate-y-[50%] md: w-3/4 max-w-[210px] md:max-w-[225px] phone-img-container"
+          >
+            <img src="./assets/images/app-landing-img.png" alt="" class="" />
+          </div>
+        </div>
+      </section>
+      <section id="howItWorks" class="h-[35rem] md:h-[55rem] w-full relative mb-10">
+        <div class="absolute -z-5 h-full w-full">
+          <img
+            src="./assets/images/french-curve-1.png"
+            alt=""
+            class="h-full w-full md:hidden"
+          />
+          <img
+            src="./assets/images/french-curve-1-lg.png"
+            alt=""
+            class="h-full w-full hidden md:block"
+          />
+        </div>
+        <div class="absolute -z-4 h-[65%] top-[40%] md:top-[38%] w-full vector">
+          <img
+            src="./assets/images/vector-1.png"
+            alt=""
+            class="h-full w-full md:hidden"
+          />
+          <img
+            src="./assets/images/vector-1-lg.png"
+            alt=""
+            class="h-full w-full hidden md:block"
+          />
+        </div>
+        <p class="text-[#1a1a1a] md:text-[1.75rem] lg:text-[2.25rem] font-bold pt-[3.8rem] md:pt-[7.5rem] mb-4 md:mb-14 text-center">
+          How It Works
+        </p>
+        <div class="">
+          <div
+            class="flex justify-between md:w-[79.5%] items-end px-3 min-h-[132px] sm:pl-6 md:pl-[6%] sm:pr-[4.5rem] md:pr-0"
+          >
+            <div class="w-[31%] text-center max-w-[130px] md:max-w-[160px]">
+              <p class="text-primary text-[.75rem] md:text-[1rem] lg:text-[1.25rem] font-bold mb-1.5">
+                Baseline Tracking
+              </p>
+              <p class="text-[.625rem] md:text-[.85rem] lg:text-[1rem]">
+                The app learns your normal behavior and patterns.
+              </p>
+            </div>
+            <div class="w-[31%] text-center max-w-[130px] md:max-w-[160px]">
+              <p class="text-primary text-[.75rem] md:text-[1rem] lg:text-[1.25rem] font-bold mb-1.5">
+                Behavioural Insights
+              </p>
+              <p class="text-[.625rem] md:text-[.85rem] lg:text-[1rem]">
+                Subtle changes—less activity, irregular responses, unusual
+                social engagement—trigger a silent alert.
+              </p>
+            </div>
+            <div class="w-[31%] text-center max-w-[130px] md:max-w-[160px]">
+              <p class="text-primary text-[.75rem] md:text-[1rem] lg:text-[1.25rem] font-bold mb-1.5">
+                Early Intervention & Support
+              </p>
+              <p class="text-[.625rem] md:text-[.85rem] lg:text-[1rem]">
+                A simple message, a call, a visit—it could make all the
+                difference.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex ml-5 justify-between md:w-[79.5%] items-start px-2 mt-[6rem] md:mt-[14rem] sm:pl-[3.5rem] md:pl-[6%] md:ml-[14%] sm:pr-10 md:pr-0"
+          >
+            <div class="w-[31%] text-center max-w-[130px] md:max-w-[160px]">
+              <p class="text-secondary text-[.75rem] md:text-[1rem] lg:text-[1.25rem] font-bold mb-1.5">
+                Track Your Mood
+              </p>
+              <p class="text-[.625rem] md:text-[.85rem] lg:text-[1rem]">
+                Log your feelings and let our app identify patterns over time.
+              </p>
+            </div>
+            <div class="w-[31%] text-center max-w-[130px] md:max-w-[160px]">
+              <p class="text-secondary text-[.75rem] md:text-[1rem] lg:text-[1.25rem] font-bold mb-1.5">
+                Trusted Circle Notifications
+              </p>
+              <p class="text-[.625rem] md:text-[.85rem] lg:text-[1rem]">
+                If concerning changes are detected, your chosen circle receives
+                an alert, encouraging them to check in.
+              </p>
+            </div>
+            <div class="w-[31%] text-center max-w-[130px] md:max-w-[160px]">
+              <p class="text-secondary text-[.75rem] md:text-[1rem] lg:text-[1.25rem] font-bold mb-1.5">
+                Access Resources
+              </p>
+              <p class="text-[.625rem] md:text-[.85rem] lg:text-[1rem]">
+                Explore expert-backed tools and join supportive communities to
+                help you navigate life’s challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="joinTheMovement" class="h-[50rem] md:h-[35rem] relative mb-2 md:relative">
+        <div class="absolute h-full w-full -z-5">
+          <img
+            src="./assets/images/french-curve-2.png"
+            alt=""
+            class="h-full w-full md:hidden"
+          />
+          <img
+            src="./assets/images/french-curve-2-lg.png"
+            alt=""
+            class="h-full w-full hidden md:block"
+          />
+        </div>
+        <div class="pt-[10rem] pl-5 pr-4 cont max-w-[490px] md:max-w-[760px] mx-auto md:pt-14 md:px-4 md:absolute md:top-[50%] md:-translate-y-[50%] md:left-[50%] md:-translate-x-[50%] md:w-[95%]">
+          <div class="md:flex md:justify-between">
+          <div class="md:w-[50%]">
+          <h4 class="font-semibold mb-2 md:text-[1.25rem]">Join the Movement</h4>
+          <p class="mb-5 md:text-[1.25rem]">Be a part of mental wellness revolution</p>
+          <p class="text-[#918c8c] mb-8">
+            By partnering with us, you become part of a mission to proactively
+            support mental wellness, prevent crises, and ensure that no one
+            faces struggles alone. Your expertise, services, and resources can
+            help us change lives
+          </p>
+        </div>
+          <div class="md:w-[40%]">
+            <input
+              type="text"
+              name=""
+              class="rounded-lg w-full text-[.875rem] placeholder:text-black placeholder:text-[.875rem] p-3 bg-[#ebedf0] mb-4 focus-visible:outline-[#007aff]"
+              placeholder="Full Name"
+            />
+            <input
+              type="text"
+              name=""
+              class="rounded-lg w-full text-[.875rem] placeholder:text-black placeholder:text-[.875rem] p-3 bg-[#ebedf0] mb-4 focus-visible:outline-[#007aff]"
+              placeholder="Enter Email Address"
+            />
+            <div class="flex items-center mb-5">
+              <input
+                type="checkbox"
+                name=""
+                class="p-3 appearance-none bg-[#d9d9d9] rounded-md checked:bg-[#007aff]"
+              />
+              <label for="" class="text-[.75rem] pl-2"
+                >I agree to receive marketing emails from Checkup</label
+              >
+            </div>
+            <button
+              class="text-white bg-[#007aff] py-2 px-8 font-bold rounded-md"
+            >
+              Join Now
+            </button>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section id="testimonials" class="h-[57rem] md:h-[69rem] relative">
+        <div class="absolute h-full w-full -z-5">
+          <img
+            src="./assets/images/french-curve-3.png"
+            alt=""
+            class="h-full w-full"
+          />
+        </div>
+        <div class="pt-[5rem] h-full">
+          <h3 class="text-[1.25rem] md:text-[2.25rem] font-bold text-center mb-10 md:mb-16">
+            Testimonials
+          </h3>
+          <div id="carousel" class="relative overflow-hidden w-full">
+            <div class="h-[39rem] md:h-[47rem]"></div>
+            <div
+              id="carousel-track"
+              class="absolute top-0 left-[50%] -translate-x-[50%] h-[43rem] w-full max-w-[350px] md:max-w-[450px] z-10 flex transition-all duration-500"
+            >
+              <!-- Cards -->
+              <div
+                class="carousel-card min-w-full px-2 inset-0 text-white transition-all duration-500 rounded-t-xl opacity-50 scale-75 opacity-100 scale-100"
+              >
+                <div class="w-full h-full bg-[#ebedf0]">
+                  <div
+                    class="w-full h-[50%] bg-[url(../images/testi-1.jpg)] bg-cover bg-center rounded-xl relative"
+                  >
+                    <div class="absolute left-3 md:left-4 bottom-3 text-white text-[1.5rem] font-bold">
+                      David O.
+                    </div>
+                  </div>
+                  <div class="px-4 pt-3 pb-8">
+                    <div class="flex space-x-1.5 mb-2">
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="md:w-[17px] md:h-[19px]"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                    </div>
+                    <p class="text-[#8e8e93] font-bold text-[.875rem] md:text-[1.25rem]">
+                      I Lost My Father to a Stroke – He Was Alone When It
+                      Happened
+                    </p>
+                    <p class="text-black text-[.75rem] md:text-[1rem] font-light pt-5">
+                      My father lived alone, and when he had a stroke, there was
+                      no one there to call for help. By the time he was found,
+                      it was too late. If someone had checked in on him sooner,
+                      he might still be here today. That’s why I joined
+                      CheckUup—to make sure no one suffers in silence or faces
+                      an emergency alone. This app is a game-changer in how we
+                      care for each other
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-card min-w-full px-2 inset-0 text-white transition-all duration-500 rounded-t-xl opacity-50 scale-75"
+              >
+                <div class="w-full h-full bg-[#ebedf0]">
+                  <div
+                    class="w-full h-[50%] bg-[url(../images/testi-2.jpg)] bg-cover bg-center rounded-xl relative"
+                  >
+                    <div class="absolute left-3 md:left-4 bottom-3 text-white text-[1.5rem] font-bold">
+                      Maria T
+                    </div>
+                  </div>
+                  <div class="px-4 pt-3 pb-8">
+                    <div class="flex space-x-1.5 mb-2">
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="md:w-[17px] md:h-[19px]"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                    </div>
+                    <p class="text-[#8e8e93] font-bold text-[.875rem] md:text-[1.25rem]">
+                      My Best Friend Was Struggling, and None of Us Knew
+                    </p>
+                    <p class="text-black text-[.75rem] md:text-[1rem] font-light pt-5">
+                      From the outside, my best friend had it all together—he
+                      was successful, always smiling. But beneath it all, he was
+                      drowning in depression. He didn’t reach out, and none of
+                      us knew until it was too late. I’ll always wonder if a
+                      simple ‘Hey, are you okay?’ could have saved him. CheckUup
+                      makes sure we don’t miss those warning signs. It’s not
+                      just an app—it’s a lifeline
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-card min-w-full px-2 inset-0 text-white transition-all duration-500 rounded-t-xl opacity-50 scale-75"
+              >
+                <div class="w-full h-full bg-[#ebedf0]">
+                  <div
+                    class="w-full h-[50%] bg-[url(../images/testi-3.jpg)] bg-cover bg-center rounded-xl relative"
+                  >
+                    <div class="absolute left-3 md:left-4 bottom-3 text-white text-[1.5rem] font-bold">
+                      Olivia Bennett
+                    </div>
+                  </div>
+                  <div class="px-4 pt-3 pb-8">
+                    <div class="flex space-x-1.5 mb-2">
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="md:w-[17px] md:h-[19px]"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                    </div>
+                    <p class="text-[#8e8e93] font-bold text-[.875rem] md:text-[1.25rem]">
+                      Mental Health First Aid is as Important as Physical First
+                      Aid
+                    </p>
+                    <p class="text-black text-[.75rem] md:text-[1rem] font-light pt-5">
+                      We are trained in CPR, we know to call 999 in a medical
+                      emergency—but what about mental health emergencies? So
+                      many people suffer alone, and we only realize something
+                      was wrong when it’s too late. CheckUup is changing that.
+                      By detecting changes and nudging people to check in, it
+                      ensures that support comes before a crisis. I believe in
+                      this movement because it saves lives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-card min-w-full px-2 inset-0 text-white transition-all duration-500 rounded-t-xl opacity-50 scale-75"
+              >
+                <div class="w-full h-full bg-[#ebedf0]">
+                  <div
+                    class="w-full h-[50%] bg-[url(../images/testi-1.jpg)] bg-cover bg-center rounded-xl relative"
+                  >
+                    <div class="absolute left-3 md:left-4 bottom-3 text-white text-[1.5rem] font-bold">
+                      Samuel K
+                    </div>
+                  </div>
+                  <div class="px-4 pt-3 pb-8">
+                    <div class="flex space-x-1.5 mb-2">
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="md:w-[17px] md:h-[19px]"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                    </div>
+                    <p class="text-[#8e8e93] font-bold text-[.875rem] md:text-[1.25rem]">
+                      Being a Befriender Has Changed My Life
+                    </p>
+                    <p class="text-black text-[.75rem] md:text-[1rem] font-light pt-5">
+                      I signed up to be a befriender through CheckUup because I
+                      wanted to make a difference. What I didn’t expect was how
+                      much it would change me. The simple act of checking in,
+                      listening, and offering support has given me purpose. I’ve
+                      met incredible people who just needed someone to care.
+                      This movement is powerful because it reminds us that we
+                      are all connected, and sometimes, a simple ‘Are you okay?’
+                      can mean everything
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-card min-w-full px-2 inset-0 text-white transition-all duration-500 rounded-t-xl opacity-50 scale-75"
+              >
+                <div class="w-full h-full bg-[#ebedf0]">
+                  <div
+                    class="w-full h-[50%] bg-[url(../images/testi-2.jpg)] bg-cover bg-center rounded-xl relative"
+                  >
+                    <div class="absolute left-3 md:left-4 bottom-3 text-white text-[1.5rem] font-bold">
+                      Maria T
+                    </div>
+                  </div>
+                  <div class="px-4 pt-3 pb-8">
+                    <div class="flex space-x-1.5 mb-2">
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="md:w-[17px] md:h-[19px]"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                          fill="#0D99FF"
+                        />
+                      </svg>
+                    </div>
+                    <p class="text-[#8e8e93] font-bold text-[.875rem] md:text-[1.25rem]">
+                      Together, We Can Change the World
+                    </p>
+                    <p class="text-black text-[.75rem] md:text-[1rem] font-light pt-5">
+                      I believe in the power of community. Through CheckUup,
+                      I’ve seen firsthand how a strong support system can
+                      prevent loneliness, depression, and even save lives.
+                      Whether it’s checking on a friend, offering mental health
+                      first aid, or simply being there for someone, every action
+                      counts. If you’re thinking about joining the movement, do
+                      it. You never know whose life you might change—including
+                      your own
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dots -->
+          <div class="flex justify-center space-x-4 md:space-x-8 mt-10">
+            <button
+              class="dot w-3 h-3 md:w-5 md:h-5 rounded-full bg-primary"
+              data-index="0"
+            ></button>
+            <button
+              class="dot w-3 h-3 md:w-5 md:h-5 rounded-full bg-[#d9d9d9]"
+              data-index="1"
+            ></button>
+            <button
+              class="dot w-3 h-3 md:w-5 md:h-5 rounded-full bg-[#d9d9d9]"
+              data-index="2"
+            ></button>
+            <button
+              class="dot w-3 h-3 md:w-5 md:h-5 rounded-full bg-[#d9d9d9]"
+              data-index="3"
+            ></button>
+            <button
+              class="dot w-3 h-3 md:w-5 md:h-5 rounded-full bg-[#d9d9d9]"
+              data-index="4"
+            ></button>
+          </div>
+        </div>
+      </section>
+      <section id="downloadNow" class="h-[27rem] py-[3rem] sm:my-[4rem] md:mt-[5rem]">
+        <div class="bg-white h-full rounded-[2.5rem] px-5">
+          <div class="flex items-center h-full justify-around">
+            <div class="w-[65%] md:max-w-[330px] pr-3">
+              <p class="md:text-[1.25rem] font-semibold mb-3">Download Now</p>
+              <p class="text-[#4a4a4a] text-[.875rem] md:text-[1rem] mb-6">
+                Be a part of mental wellness revolution. Also see why so many
+                people enjoy our app.
+              </p>
+              <div class="flex space-x-1.5 mb-2">
+                <svg
+                  width="16"
+                  height="17"
+                  class="md:h-[20px] md:w-[19px]"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                    fill="#FFE70D"
+                  />
+                </svg>
+                <svg
+                  width="16"
+                  height="17"
+                  class="md:h-[20px] md:w-[19px]"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                    fill="#FFE70D"
+                  />
+                </svg>
+                <svg
+                  width="16"
+                  height="17"
+                  class="md:h-[20px] md:w-[19px]"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                    fill="#FFE70D"
+                  />
+                </svg>
+                <svg
+                  width="16"
+                  height="17"
+                  class="md:h-[20px] md:w-[19px]"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                    fill="#FFE70D"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  class="md:h-[20px] md:w-[19px]"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                    fill="#FFE70D"
+                  />
+                </svg>
+              </div>
+              <p class="text-[.875rem] md:text-[1rem] font-bold mb-3">
+                5/5 <span class="text-[#777777]">560 REVIEWS</span>
+              </p>
+              <button
+                class="bg-primary text-white md:text-[1.25rem] font-bold py-2 text-center w-[90%] rounded-lg"
+              >
+                Download
+              </button>
+            </div>
+            <div class="w-[35%] max-w-[135px] sm:max-w-[200px] md:max-w-[220px] phone-img-cont">
+              <img
+                src="./assets/images/app-landing-img.png"
+                alt=""
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="corporate-partnership"
+        class="w-full py-[4rem] corpart-sect h-[1470px] sm:h-[1510px] md:h-[1770px] transition-[height]"
+      >
+        <div class="flex w-full roboto px-3 max-w-[400px] mx-auto sm:ml-0 md:pr-auto md:border-b-1 md:border-[#666666] md:max-w-none">
+          <div
+            class="border-b-1 border-[#959595] text-[#666666] md:text-[1.5rem] lg:text-[2rem] transition duration-900 text-center font-medium md:font-semibold lg:font-bold w-1/2 cursor-pointer corpart-btn md:border-b-2 md:w-[35%] pb-3"
+            data-index="0"
+          >
+            Corporate Wellness
+          </div>
+          <div
+            class="border-b-1 border-[#959595] text-[#666666] md:text-[1.5rem] lg:text-[2rem] transition duration-900 text-center font-medium md:font-semibold lg:font-bold w-1/2 cursor-pointer corpart-btn border-b-2 md:border-b-2 md:border-b-4 border-primary text-primary md:w-[35%] pb-3"
+            data-index="1"
+          >
+            Partnership
+          </div>
+        </div>
+        <div class="w-full relative">
+          <div
+            class="corpwell absolute w-full opacity-0 z-0 transition duration-[1500ms] ease-linear"
+          >
+          <div class="hidden lg:block absolute top-10 -z-5">
+            <img src="./assets/images/vector-primary.png" alt="" class="">
+          </div>
+            <div
+              class="w-full max-w-[350px] max-w-[500px] h-[28rem] sm:h-[35rem] md:h-[48rem] mx-auto py-8 sm:pb-0 px-5 relative"
+            >
+              <div class="rounded-t-3xl h-[55%] sm:h-[50%] overflow-hidden">
+                <img
+                  src="./assets/images/checkuup-img-4.jpg"
+                  alt=""
+                  class="h-full"
+                />
+              </div>
+              <div class="relative">
+                <div
+                  class="rounded-xl bg-white px-3 py-3 z-1 absolute -top-5 sm:px-10 sm:py-8"
+                >
+                  <p class="text-primary text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] font-bold mb-3">
+                    Boost Productivity, Enhance Well-Being, and Build a
+                    Supportive Work Culture
+                  </p>
+                  <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] pb-2">
+                    Mental wellness is key to a thriving, engaged, and
+                    high-performing workforce. Stress, burnout, and emotional
+                    struggles can impact productivity, retention, and overall
+                    workplace morale. CheckUup provides organizations with the
+                    tools they need to foster a mentally healthy work
+                    environment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <h3
+                class="text-primary text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] font-bold mb-3 px-3 text-center"
+              >
+                How CheckUup Supports Organizations
+              </h3>
+              <p class="text-[.75rem] md:text-[1rem] text-center px-3 max-w-[500px] mx-auto">
+                Companies that invest in employee well-being see higher
+                retention rates and better team collaboration.
+              </p>
+              <div class="my-6">
+                <div
+                  class="flex overflow-x-scroll scroll-smooth snap-x snap-mandatory space-x-4"
+                >
+                  <div
+                    class="pt-8 pb-4 px-6 ml-[2rem] bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center"
+                  >
+                    <p class="text-[#1a1a1a] text-[.875rem] md:text-[1.25rem] font-bold mb-3">
+                      Employee Engagement & Well-Being
+                    </p>
+                    <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] ex">
+                      Equip your team with tools to check in on their mental
+                      health, track their moods, and access support when needed.
+                    </p>
+                  </div>
+                  <div
+                    class="pt-8 pb-4 px-6 bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center"
+                  >
+                    <p class="text-[#1a1a1a] text-[.875rem] md:text-[1.25rem] font-bold mb-3">
+                      Data-Driven Insights for Leadership
+                    </p>
+                    <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] ex">
+                      Gain a deeper understanding of workplace mental wellness
+                      through anonymous, aggregated insights.
+                    </p>
+                  </div>
+                  <div
+                    class="pt-8 pb-4 px-6 mr-[4rem] bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center"
+                  >
+                    <p class="text-[#1a1a1a] text-[.875rem] md:text-[1.25rem] font-bold mb-3">
+                      Access to Expert Resources & Workshops
+                    </p>
+                    <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] ex">
+                      Offer your employees access to a curated library of mental
+                      health resources, well-being workshops, and
+                      expert-approved content to help them maintain a healthy
+                      work-life balance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-primary text-white md:text-[1.25rem] font-bold rounded-lg min-w-[250px] md:min-w-[230px] py-2 mx-auto block my-10"
+              >
+                Explore corporate wellness
+              </button>
+              <div
+                class="flex overflow-x-scroll scroll-smooth snap-x snap-mandatory"
+              >
+                <div class="px-4 snap-center min-w-full">
+                  <div
+                    class="bg-white py-4 px-5 rounded-xl mx-auto max-w-[475px]"
+                  >
+                    <div class="flex space-x-1.5 my-3">
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="md:w-[17px] md:h-[19px]"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                    </div>
+                    <p class="font-semibold text-[.875rem] md:text-[1rem] mb-2.5">
+                      A Partnership That’s Changing Lives
+                    </p>
+                    <p class="text-[.875rem]/[20px] md:text-[1rem]/[20px] mb-4">
+                      we are committed to mental well-being, and partnering with
+                      CheckUup has been a game-changer. Their innovative
+                      approach to proactive mental health support aligns
+                      perfectly with our mission. Through our collaboration,
+                      we’ve been able to provide immediate support to those in
+                      need, ensuring that no one feels alone. This partnership
+                      is more than just business—it’s about saving lives
+                    </p>
+                    <p class="font-semibold text-[.875rem] md:text-[1rem] mb-1">
+                      Company's Name
+                    </p>
+                    <p class="text-[#888484] text-[.875rem] md:text-[1rem] mb-2">
+                      June 01, 2000
+                    </p>
+                  </div>
+                </div>
+                <div class="px-4 snap-center min-w-full">
+                  <div
+                    class="bg-white py-4 px-5 rounded-xl mx-auto max-w-[475px]"
+                  >
+                    <div class="flex space-x-1.5 my-3">
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="md:w-[17px] md:h-[19px]"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                    </div>
+                    <p class="font-semibold text-[.875rem] md:text-[1rem] mb-2.5">
+                      Bringing Mental Health First Aid to More People
+                    </p>
+                    <p class="text-[.875rem]/[20px] md:text-[1rem]/[20px] mb-4">
+                      We’ve always believed that mental health first aid should
+                      be as accessible as physical first aid. Partnering with
+                      CheckUup allows us to extend our reach, helping
+                      individuals and communities recognize the early signs of
+                      struggle and take action. Together, we are building a
+                      culture where mental wellness is a priority, and no one
+                      suffers in silence.
+                    </p>
+                    <p class="font-semibold text-[.875rem] md:text-[1rem] mb-1">
+                      Company’s Name
+                    </p>
+                    <p class="text-[#888484] text-[.875rem] md:text-[1rem] mb-2">
+                      June 01, 2000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="partner absolute w-full opacity-0 z-0 transition duration-[1500ms] ease-linear opacity-100 z-5 relative"
+          >
+          <div class="hidden lg:block absolute top-10 -z-5">
+            <img src="./assets/images/vector-primary.png" alt="" class="">
+          </div>
+            <div
+              class="w-full max-w-[350px] max-w-[500px] h-[28rem] sm:h-[35rem] md:h-[44rem] mx-auto py-8 sm:pb-0 px-5 relative"
+            >
+              <div class="rounded-t-3xl h-[50%] sm:h-[55%] md:h-[50%] overflow-hidden">
+                <img
+                  src="./assets/images/checkuup-img-3.png"
+                  alt=""
+                  class="h-full"
+                />
+              </div>
+              <div class="relative">
+                <div
+                  class="rounded-xl bg-white px-3 py-3 z-1 absolute -top-5 sm:px-10 sm:py-8"
+                >
+                  <p class="text-primary text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] font-bold mb-3">
+                    Together, We Can Build a Supportive World
+                  </p>
+                  <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] pb-2">
+                    Not everyone has a trusted circle to check in on them.
+                    That’s why CheckUup partners with mental health
+                    organizations, charities, healthcare services, independent
+                    professionals, and providers of mental health and well-being
+                    resources & products—to ensure that no one is left behind
+                    when it comes to mental well-being.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <h3
+                class="text-primary text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] font-bold mb-3 px-3 text-center"
+              >
+                Why Partner with CheckUup?
+              </h3>
+              <p class="text-[.75rem] md:text-[1rem] text-center px-3 max-w-[500px] mx-auto">
+                We believe that mental wellness is a shared responsibility. By
+                collaborating with trusted organizations, we can provide
+              </p>
+              <div class="my-6 md:my-10">
+                <div
+                  class="flex overflow-x-scroll scroll-smooth snap-x snap-mandatory space-x-4"
+                >
+                  <div
+                    class="pt-8 pb-4 px-6 ml-[2rem] bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center"
+                  >
+                    <p class="text-[#1a1a1a] text-[.875rem] md:text-[1.25rem] font-bold mb-3">
+                      Professional Support & Befriending Services
+                    </p>
+                    <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] ex">
+                      Connecting individuals with trained professionals who can
+                      offer a listening ear and real support
+                    </p>
+                  </div>
+                  <div
+                    class="pt-8 pb-4 px-6 bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center"
+                  >
+                    <p class="text-[#1a1a1a] text-[.875rem] md:text-[1.25rem] font-bold mb-3">
+                      Community Outreach & Awareness Campaign
+                    </p>
+                    <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] ex">
+                      Partnering with CheckUup means joining forces to raise
+                      awareness about mental health through community programs,
+                      educational workshops, and advocacy initiatives that drive
+                      real change.
+                    </p>
+                  </div>
+                  <div
+                    class="pt-8 pb-4 px-6 bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center"
+                  >
+                    <p class="text-[#1a1a1a] text-[.875rem] md:text-[1.25rem] font-bold mb-3">
+                      Access to Resources & Products
+                    </p>
+                    <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] ex">
+                      Partnering with organizations that provide education,
+                      counseling, self-care tools, therapy services, and
+                      wellness products to empower individuals and communities.
+                    </p>
+                  </div>
+                  <div
+                    class="pt-8 pb-4 px-6 bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center"
+                  >
+                    <p class="text-[#1a1a1a] text-[.875rem] md:text-[1.25rem] font-bold mb-3">
+                      Mental Health First Aid
+                    </p>
+                    <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] ex">
+                      Ensuring immediate help is available when it’s needed
+                      most.
+                    </p>
+                  </div>
+                  <div
+                    class="pt-8 pb-4 px-6 mr-[3rem] bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center"
+                  >
+                    <p class="text-[#1a1a1a] text-[.875rem] md:text-[1.25rem] font-bold mb-3">
+                      Innovation & Research
+                    </p>
+                    <p class="text-[#4a4a4a] text-[.75rem] md:text-[1rem] ex">
+                      Driving progress in mental health solutions through
+                      technology, data, and collaboration.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-primary text-white md:text-[1.25rem] font-bold rounded-lg min-w-[180px] md:min-w-[230px] py-2 mx-auto block my-10"
+              >
+                Become a Partner
+              </button>
+              <div
+                class="flex overflow-x-scroll scroll-smooth snap-x snap-mandatory"
+              >
+                <div class="px-4 snap-center min-w-full">
+                  <div
+                    class="bg-white py-4 px-5 rounded-xl mx-auto max-w-[475px]"
+                  >
+                    <div class="flex space-x-1.5 my-3">
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="md:w-[17px] md:h-[19px]"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                    </div>
+                    <p class="font-semibold text-[.875rem] md:text-[1rem] mb-2.5">
+                      A Partnership That’s Changing Lives
+                    </p>
+                    <p class="text-[.875rem]/[20px] md:text-[1rem]/[20px] mb-4">
+                      we are committed to mental well-being, and partnering with
+                      CheckUup has been a game-changer. Their innovative
+                      approach to proactive mental health support aligns
+                      perfectly with our mission. Through our collaboration,
+                      we’ve been able to provide immediate support to those in
+                      need, ensuring that no one feels alone. This partnership
+                      is more than just business—it’s about saving lives
+                    </p>
+                    <p class="font-semibold text-[.875rem] md:text-[1rem] mb-1">
+                      Company's Name
+                    </p>
+                    <p class="text-[#888484] text-[.875rem] md:text-[1rem] mb-2">
+                      June 01, 2000
+                    </p>
+                  </div>
+                </div>
+                <div class="px-4 snap-center min-w-full">
+                  <div
+                    class="bg-white py-4 px-5 rounded-xl mx-auto max-w-[475px]"
+                  >
+                    <div class="flex space-x-1.5 my-3">
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="16"
+                        height="17"
+                        class="md:w-[20px] md:h-[20px]"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.8835 14.5002L4.96683 9.81683L1.3335 6.66683L6.1335 6.25016L8.00016 1.8335L9.86683 6.25016L14.6668 6.66683L11.0335 9.81683L12.1168 14.5002L8.00016 12.0168L3.8835 14.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="md:w-[17px] md:h-[19px]"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.90016 10.7168L7.00016 9.45016L9.10016 10.7335L8.55016 8.3335L10.4002 6.7335L7.96683 6.51683L7.00016 4.25016L6.0335 6.50016L3.60016 6.71683L5.45016 8.3335L4.90016 10.7168ZM2.8835 13.5002L3.96683 8.81683L0.333496 5.66683L5.1335 5.25016L7.00016 0.833496L8.86683 5.25016L13.6668 5.66683L10.0335 8.81683L11.1168 13.5002L7.00016 11.0168L2.8835 13.5002Z"
+                          fill="#FFE70D"
+                        />
+                      </svg>
+                    </div>
+                    <p class="font-semibold text-[.875rem] md:text-[1rem] mb-2.5">
+                      Bringing Mental Health First Aid to More People
+                    </p>
+                    <p class="text-[.875rem]/[20px] md:text-[1rem]/[20px] mb-4">
+                      We’ve always believed that mental health first aid should
+                      be as accessible as physical first aid. Partnering with
+                      CheckUup allows us to extend our reach, helping
+                      individuals and communities recognize the early signs of
+                      struggle and take action. Together, we are building a
+                      culture where mental wellness is a priority, and no one
+                      suffers in silence.
+                    </p>
+                    <p class="font-semibold text-[.875rem] md:text-[1rem] mb-1">
+                      Company’s Name
+                    </p>
+                    <p class="text-[#888484] text-[.875rem] md:text-[1rem] mb-2">
+                      June 01, 2000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faqs" class="relative">
+        <div class="absolute -top-17 -z-10 lg:hidden">
+          <img src="./assets/images/vector-2.png" alt="" class="" />
+        </div>
+        <div class="px-4 max-w-[490px] md:max-w-[650px] mx-auto">
+          <h3 class="text-[1.25rem] md:text-[2.25rem] font-semibold text-center mb-2 md:mb-4 md:max-w-[550px] md:mx-auto">
+            Frequently Asked Questions (FAQS)
+          </h3>
+          <p class="text-[#616161] text-[.75rem] md:text-[1rem] text-center mb-5 md:mb-10 md:max-w-[450px] md:mx-auto">
+            We compiled a list of answers to address your most pressing
+            questions regarding our services
+          </p>
+          <div class="flex flex-col space-y-5 py-4">
+            <div
+              class="faq bg-white px-6 rounded-lg h-[5rem] md:h-[6rem] overflow-hidden transition-[height] duration-400"
+            >
+              <div class="flex justify-between items-center h-[5.1rem] md:h-[6.1rem]">
+                <p class="text-[#1a1a1a] md:text-[1.5rem] font-semibold pr-2">
+                  What is CheckUup?
+                </p>
+                <div
+                  class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
+                >
+                  <svg
+                    width="18"
+                    height="13"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.45557 2.7998C5.01557 5.35981 7.7889 8.13314 8.85556 9.19981L15.2556 2.79981"
+                      stroke="white"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="h-[2px] bg-linear-to-r from-[#0098DB] to-[#FDC553] mb-5"
+              ></div>
+              <p class="text-[#4a4a4a] font-medium">
+                CheckUup is an app designed to proactively support mental
+                wellness by detecting behavioral changes and alerting trusted
+                contacts when someone may need a check-in. It fosters a culture
+                of care and community-driven mental health support.
+              </p>
+            </div>
+            <div
+              class="faq bg-white px-6 rounded-lg h-[5rem] md:h-[6rem] overflow-hidden transition-[height] duration-400"
+            >
+              <div class="flex justify-between items-center h-[5.1rem] md:h-[6.1rem]">
+                <p class="text-[#1a1a1a] md:text-[1.5rem] font-semibold pr-2">
+                  Who is CheckUup for?
+                </p>
+                <div
+                  class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
+                >
+                  <svg
+                    width="18"
+                    height="13"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.45557 2.7998C5.01557 5.35981 7.7889 8.13314 8.85556 9.19981L15.2556 2.79981"
+                      stroke="white"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="h-[2px] bg-linear-to-r from-[#0098DB] to-[#FDC553] mb-5"
+              ></div>
+              <p class="text-[#4a4a4a] font-medium">
+                CheckUup is for anyone who wants to ensure that they and their
+                loved ones have a strong, supportive network. It’s especially
+                valuable for those living alone, individuals facing life
+                challenges, students, professionals, and organizations committed
+                to mental health awareness.
+              </p>
+            </div>
+            <div
+              class="faq bg-white px-6 rounded-lg h-[5rem] md:h-[6rem] overflow-hidden transition-[height] duration-400"
+            >
+              <div class="flex justify-between items-center h-[5.1rem] md:h-[6.1rem]">
+                <p class="text-[#1a1a1a] md:text-[1.5rem] font-semibold pr-2">
+                  What if someone doesn’t have a support network?
+                </p>
+                <div
+                  class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
+                >
+                  <svg
+                    width="18"
+                    height="13"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.45557 2.7998C5.01557 5.35981 7.7889 8.13314 8.85556 9.19981L15.2556 2.79981"
+                      stroke="white"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="h-[2px] bg-linear-to-r from-[#0098DB] to-[#FDC553] mb-5"
+              ></div>
+              <p class="text-[#4a4a4a] font-medium">
+                Not everyone has a personal support network, which is why
+                CheckUup partners with mental health organizations, befriending
+                services, and crisis support groups to provide additional
+                assistance when needed.
+              </p>
+            </div>
+            <div
+              class="faq bg-white px-6 rounded-lg h-[5rem] md:h-[6rem] overflow-hidden transition-[height] duration-400"
+            >
+              <div class="flex justify-between items-center h-[5.1rem] md:h-[6.1rem]">
+                <p class="text-[#1a1a1a] md:text-[1.5rem] font-semibold pr-2">
+                  Can organizations partner with CheckUup?
+                </p>
+                <div
+                  class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
+                >
+                  <svg
+                    width="18"
+                    height="13"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.45557 2.7998C5.01557 5.35981 7.7889 8.13314 8.85556 9.19981L15.2556 2.79981"
+                      stroke="white"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="h-[2px] bg-linear-to-r from-[#0098DB] to-[#FDC553] mb-5"
+              ></div>
+              <p class="text-[#4a4a4a] font-medium">
+                Not everyone has a personal support network, which is why
+                CheckUup partners with mental health organizations, befriending
+                services, and crisis support groups to provide additional
+                assistance when needed.
+              </p>
+            </div>
+            <div
+              class="faq bg-white px-6 rounded-lg h-[5rem] md:h-[6rem] overflow-hidden transition-[height] duration-400"
+            >
+              <div class="flex justify-between items-center h-[5.1rem] md:h-[6.1rem]">
+                <p class="text-[#1a1a1a] md:text-[1.5rem] font-semibold pr-2">
+                  How can I become a befriender or volunteer?
+                </p>
+                <div
+                  class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
+                >
+                  <svg
+                    width="18"
+                    height="13"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.45557 2.7998C5.01557 5.35981 7.7889 8.13314 8.85556 9.19981L15.2556 2.79981"
+                      stroke="white"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="h-[2px] bg-linear-to-r from-[#0098DB] to-[#FDC553] mb-5"
+              ></div>
+              <p class="text-[#4a4a4a] font-medium">
+                If you want to support others by providing check-ins, mental
+                health first aid, or befriending services, you can sign up
+                through CheckUup to join our network of volunteers making a
+                difference.
+              </p>
+            </div>
+            <div
+              class="faq bg-white px-6 rounded-lg h-[5rem] md:h-[6rem] overflow-hidden transition-[height] duration-400"
+            >
+              <div class="flex justify-between items-center h-[5.1rem] md:h-[6.1rem]">
+                <p class="text-[#1a1a1a] md:text-[1.5rem] font-semibold pr-2">
+                  Is CheckUup secure and private?
+                </p>
+                <div
+                  class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
+                >
+                  <svg
+                    width="18"
+                    height="13"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.45557 2.7998C5.01557 5.35981 7.7889 8.13314 8.85556 9.19981L15.2556 2.79981"
+                      stroke="white"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="h-[2px] bg-linear-to-r from-[#0098DB] to-[#FDC553] mb-5"
+              ></div>
+              <p class="text-[#4a4a4a] font-medium">
+                Yes. User data and behavioral insights are handled with the
+                highest privacy standards. Only trusted contacts designated by
+                the user will receive alerts, ensuring a confidential and safe
+                experience.
+              </p>
+            </div>
+            <div
+              class="faq bg-white px-6 rounded-lg h-[5rem] md:h-[6rem] overflow-hidden transition-[height] duration-400"
+            >
+              <div class="flex justify-between items-center h-[5.1rem] md:h-[6.1rem]">
+                <p class="text-[#1a1a1a] md:text-[1.5rem] font-semibold pr-2">
+                  How can I download and start using CheckUup?
+                </p>
+                <div
+                  class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
+                >
+                  <svg
+                    width="18"
+                    height="13"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.45557 2.7998C5.01557 5.35981 7.7889 8.13314 8.85556 9.19981L15.2556 2.79981"
+                      stroke="white"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="h-[2px] bg-linear-to-r from-[#0098DB] to-[#FDC553] mb-5"
+              ></div>
+              <p class="text-[#4a4a4a] font-medium">
+                CheckUup will be available on major app stores. Sign up for
+                early access and updates at [Your Contact Email/Sign-Up Link].
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="py-3 bg-white mt-[4rem]">
+        <div class="px-5 md:px-2 pb-5 border-b-1 border-[#3a3a3a]">
+          <div class="md:flex md:items-end md:justify-around">
+            <div class="md:max-w-[310px]">
+            <div class="-ml-[1.21rem] mb-3 md:w-[200px]">
+              <img src="./assets/images/CheckUup logo 3.png" alt="" class="md:w-full" />
+            </div>
+            <p class="text-[.875rem] md:text-[1rem] font-semibold mb-2">
+              Because Mental Wellness Matters
+            </p>
+            <p class="text-[#737373] text-[.75rem] md:text-[1rem] max-w-[350px]">
+              A proactive mental wellness platform designed to help individuals
+              track their emotions, stay connected, and receive support when
+              needed
+            </p>
+            </div>
+          <div class="lg:flex">
+          <div class="my-8 lg:mb-0">
+            <div class="flex mb-4 items-center">
+              <span class="md:text-[1rem]">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 13.42V16.956C18.0001 17.2092 17.9042 17.453 17.7316 17.6382C17.559 17.8234 17.3226 17.9363 17.07 17.954C16.6333 17.9847 16.2767 18 16 18C7.163 18 0 10.837 0 2C0 1.724 0.0153333 1.36733 0.046 0.93C0.0637224 0.677444 0.176581 0.441011 0.361804 0.268409C0.547026 0.0958068 0.790823 -0.000114433 1.044 2.56579e-07H4.58C4.70404 -0.000125334 4.8237 0.045859 4.91573 0.12902C5.00776 0.212182 5.0656 0.326583 5.078 0.45C5.10067 0.679334 5.122 0.863333 5.142 1.002C5.34072 2.38893 5.74799 3.73784 6.35 5.003C6.445 5.203 6.383 5.442 6.203 5.57L4.045 7.112C5.36471 10.1863 7.81472 12.6363 10.889 13.956L12.429 11.802C12.4917 11.7137 12.5835 11.6503 12.6883 11.6231C12.7932 11.5958 12.9042 11.6064 13.002 11.653C14.267 12.2539 15.6156 12.6601 17.002 12.858C17.1407 12.878 17.324 12.8993 17.552 12.922C17.6752 12.9346 17.7894 12.9926 17.8724 13.0846C17.9553 13.1766 18.0002 13.2961 18 13.42Z"
+                    fill="#737373"
+                  />
+                </svg>
+              </span>
+              <p
+                class="nunito-sans text-[#737373] text-[.875rem] md:text-[1rem] font-medium ml-2"
+              >
+                +1 (000) 999 888 777
+              </p>
+            </div>
+            <div class="flex items-center">
+              <span class="md:text-[1rem]">
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.879 0.879C-5.96046e-08 1.757 0 3.172 0 6V8C0 10.828 -5.96046e-08 12.243 0.879 13.121C1.757 14 3.172 14 6 14H12C14.828 14 16.243 14 17.121 13.121C18 12.243 18 10.828 18 8V6C18 3.172 18 1.757 17.121 0.879C16.243 1.78814e-07 14.828 0 12 0H6C3.172 0 1.757 1.78814e-07 0.879 0.879ZM3.555 3.168C3.33434 3.02081 3.06424 2.9673 2.80413 3.01924C2.54402 3.07119 2.3152 3.22434 2.168 3.445C2.02081 3.66566 1.9673 3.93576 2.01924 4.19587C2.07119 4.45598 2.22434 4.6848 2.445 4.832L7.891 8.462C8.21945 8.68085 8.60531 8.79763 9 8.79763C9.39469 8.79763 9.78055 8.68085 10.109 8.462L15.555 4.832C15.7757 4.6848 15.9288 4.45598 15.9808 4.19587C16.0327 3.93576 15.9792 3.66566 15.832 3.445C15.6848 3.22434 15.456 3.07119 15.1959 3.01924C14.9358 2.9673 14.6657 3.02081 14.445 3.168L9 6.798L3.555 3.168Z"
+                    fill="#737373"
+                  />
+                </svg>
+              </span>
+              <p
+                class="nunito-sans text-[#737373] text-[.875rem] md:text-[1rem] font-medium ml-2"
+              >
+                support@checkuup.com
+              </p>
+            </div>
+          </div>
+          <div class="flex max-w-[380px]">
+            <div class="w-[50%] pr-3">
+              <img
+                src="./assets/images/google-play.png"
+                alt=""
+                class="max-w-full border-[.68px] border-[#3a3a3a]"
+              />
+            </div>
+            <div class="w-[50%] pr-3">
+              <img
+                src="./assets/images/app-store.png"
+                alt=""
+                class="max-w-full border-[.68px] border-[#3a3a3a]"
+              />
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div class="py-4 px-3">
+          <div class="md:flex md:justify-around">
+          <p
+            class="nunito-sans text-white text-[.875rem] md:text-[1.25rem] font-semibold mb-6 md:mb-0 text-shadowed"
+          >
+            © 2025 Checkup.com . All rights reserved
+          </p>
+          <div class="flex max-w-[340px] md:min-w-[350px] pl-.5">
+            <p class="nunito-sans md:text-[1.25rem] font-semibold mr-auto">Terms of Service</p>
+            <div class="flex">
+              <div class="">
+                <img
+                  src="./assets/images/facebook-icon.png"
+                  alt=""
+                  class="mx-2"
+                />
+              </div>
+              <div class="">
+                <img
+                  src="./assets/images/snapchat-icon.png"
+                  alt=""
+                  class="mx-2"
+                />
+              </div>
+              <div class="">
+                <img
+                  src="./assets/images/linkedIn-icon.png"
+                  alt=""
+                  class="mx-2"
+                />
+              </div>
+              <div class="">
+                <img
+                  src="./assets/images/instagram-icon.png"
+                  alt=""
+                  class="mx-2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      //responsiveness script
+      if (window.innerWidth >= 450 && window.innerWidth < 768) {
+        console.log("450+");
+
+        //main intro
+        document
+          .querySelector("#main-intro")
+          .classList.replace("px-6", "px-10");
+
+        //CEO message
+        document
+          .querySelector("#CEO-message")
+          .classList.replace("px-6", "px-10");
+
+        //what is checkuup
+        document
+          .querySelector("#whatIsCheckuup")
+          .classList.replace("px-6", "px-10");
+
+        //yellow icon flex
+        document
+          .querySelector("#yellowIconFlex")
+          .classList.replace("px-6", "px-10");
+
+        //why checkuup
+        document
+          .querySelector("#whyCheckuup")
+          .classList.replace("mx-5", "mx-8");
+        document
+          .querySelector("#whyCheckuup")
+          .classList.replace("px-4", "px-6");
+        document
+          .querySelector(".phone-img-container")
+          .classList.remove("max-w-[210px]");
+        document
+          .querySelector(".phone-img-container")
+          .classList.add("max-w-[270px]");
+        document
+          .querySelector(".img-cont-cont")
+          .classList.replace("h-[19rem]", "h-[25rem]");
+
+        //how it works
+        document
+          .querySelector("#howItWorks")
+          .classList.replace("h-[35rem]", "h-[40rem]");
+        document
+          .querySelector("#howItWorks .vector")
+          .classList.replace("top-[40%]", "top-[39.5%]");
+        document
+          .querySelector("#howItWorks p")
+          .classList.replace("pt-[3.8rem]", "pt-[5rem]");
+        document
+          .querySelectorAll("#howItWorks .flex")[0]
+          .classList.add("mr-[10%]");
+        document
+          .querySelectorAll("#howItWorks .flex")[1]
+          .classList.replace("mt-[6rem]", "mt-[9rem]");
+        document
+          .querySelectorAll("#howItWorks .flex")[1]
+          .classList.replace("ml-5", "ml-[10%]");
+
+        //join the movement
+        document
+          .querySelector("#joinTheMovement .cont")
+          .classList.remove("pl-5", "pr-4", "pt-[9rem]");
+        document
+          .querySelector("#joinTheMovement .cont")
+          .classList.add("px-10", "pt-[10rem]");
+
+        //download now
+        // document.querySelector("#downloadNow .phone-img-cont").classList.replace("max-w-[110px]", "max-w-[135px]")
+
+        //footer
+        document
+          .querySelectorAll("footer>div")[0]
+          .classList.replace("px-5", "px-12");
+        document
+          .querySelectorAll("footer>div")[1]
+          .classList.replace("px-3", "px-8");
+      }
+
+      const nav = document.querySelector("nav");
+      const showNavBtn = document.querySelector(".nav-show");
+      const hideNavBtn = document.querySelector(".nav-hide");
+
+      const showNav = () => {
+        nav.classList.add("w-3/4", "sm:w-1/2");
+        hideNavBtn.classList.remove("left-5", "opacity-0", "rotate-180");
+        showNavBtn.classList.add("left-53", "sm:left-30", "opacity-0", "z-50");
+        hideNavBtn.addEventListener("click", hideNav);
+        showNavBtn.removeEventListener("click", showNav);
+      };
+
+      const hideNav = () => {
+        nav.classList.remove("w-3/4", "sm:w-1/2");
+        showNavBtn.classList.remove("left-53", "sm:left-30", "opacity-0");
+        hideNavBtn.classList.add("left-5", "opacity-0", "z-55", "rotate-180");
+        showNavBtn.addEventListener("click", showNav);
+        hideNavBtn.removeEventListener("click", hideNav);
+      };
+
+      showNavBtn.addEventListener("click", showNav);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const thumb = document.querySelector(".youtube-thumb");
+
+        const replaceThumbnail = () => {
+          const videoId = thumb.dataset.videoId;
+          const iframe = document.createElement("iframe");
+
+          iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
+          iframe.title = "YouTube video";
+          iframe.allow =
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.allowFullscreen = true;
+          iframe.loading = "lazy";
+          iframe.className = "w-full h-[364px]";
+
+          thumb.innerHTML = ""; // Clear thumbnail
+          thumb.appendChild(iframe);
+          thumb.removeEventListener("click", replaceThumbnail);
+        };
+
+        thumb.addEventListener("click", replaceThumbnail);
+      });
+
+      //testimonials script
+      const caroTrack = document.querySelector("#carousel-track");
+      const caroButtons = document.querySelectorAll(".dot");
+      const caroCards = document.querySelectorAll(".carousel-card ");
+      let currentIndex = 0;
+
+      const testiYeet = (index) => {
+        caroTrack.style.transform = `translateX(-${index * 100}%)`;
+
+        caroButtons.forEach((btn) => {
+          btn.classList.replace("bg-primary", "bg-[#d9d9d9]");
+        });
+        caroButtons[index].classList.replace("bg-[#d9d9d9]", "bg-primary");
+        caroCards.forEach((card) => {
+          card.classList.remove("opacity-100", "scale-100");
+        });
+        caroCards[index].classList.add("opacity-100", "scale-100");
+        currentIndex = index;
+      };
+
+      caroButtons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+          testiYeet(index);
+        });
+      });
+
+      setInterval(() => {
+        const index = currentIndex >= 4 ? 0 : ++currentIndex;
+        testiYeet(index);
+      }, 9000);
+
+      //corpart script
+      const corpartButtons = document.querySelectorAll(".corpart-btn");
+      const partner = document.querySelector(".partner");
+      const corpwell = document.querySelector(".corpwell");
+      const corpartSect = document.querySelector(".corpart-sect");
+
+      corpartButtons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+          if (index === 0) {
+            corpartButtons[1].classList.remove(
+              "text-primary",
+              "border-b-2",
+              "md:border-b-4",
+              "border-primary",
+              "text-primary"
+            );
+            corpartButtons[1].classList.add("md:border-b-2");
+            corpartButtons[0].classList.add(
+              "text-primary",
+              "border-b-2",
+              "md:border-b-4",
+              "border-primary",
+              "text-primary"
+            );
+            partner.classList.remove("opacity-100", "z-5");
+            corpwell.classList.add("opacity-100", "z-5");
+            corpartSect.classList.replace("md:h-[1770px]", "md:h-[1830px]");
+            // corpartSect.classList.add("h-[1470px]", "sm:h-[1510px]");
+          } else {
+            corpartButtons[0].classList.remove(
+              "text-primary",
+              "border-b-2",
+              "md:border-b-4",
+              "border-primary",
+              "text-primary"
+            );
+            corpartButtons[0].classList.add("md:border-b-2");
+            corpartButtons[1].classList.add(
+              "text-primary",
+              "border-b-2",
+              "md:border-b-4",
+              "border-primary",
+              "text-primary"
+            );
+            corpwell.classList.remove("opacity-100", "z-5");
+            partner.classList.add("opacity-100", "z-5");
+            corpartSect.classList.replace("md:h-[1830px]", "md:h-[1770px]");
+            // corpartSect.classList.add("h-[1470px]", "sm:h-[1510px]");
+          }
+        });
+      });
+
+      //faq script
+      const faqButtons = document.querySelectorAll(".faq-btn");
+      const faqs = document.querySelectorAll(".faq");
+
+      faqButtons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+          let dropdownOpen = btn.classList.contains("rotate-180");
+          if (dropdownOpen) {
+            faqs[index].classList.remove("h-[20rem]", "sm:h-[17rem]", "md:h-[17rem]");
+            btn.classList.remove("rotate-180");
+          } else {
+            faqs[index].classList.add("h-[20rem]", "sm:h-[17rem]", "md:h-[17rem]");
+            btn.classList.add("rotate-180");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

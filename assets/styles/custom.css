@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.inter {
+  font-family: "Inter";
+}
+
+.roboto {
+  font-family: "Roboto";
+}
+
+.nunito-sans {
+  font-family: "Nunito Sans";
+}
+
+.bg-primary {
+  background-color: #0098db;
+}
+
+.text-primary {
+  color: #0098db;
+}
+
+.border-primary {
+  border-color: #0098db;
+}
+
+.bg-secondary {
+  background-color: #fdc553;
+}
+
+.text-secondary {
+  color: #fdc553;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.text-shadowed {
+    -webkit-text-stroke: #3a3a3a 1px;
+}
+
+/* @media screen and (min-width: 450px) {
+  
+} */
