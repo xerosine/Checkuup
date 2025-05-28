@@ -54,19 +54,17 @@
   color: #fdc553;
 }
 
-.scrollbar-hide {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-
 .text-shadowed {
-    -webkit-text-stroke: #3a3a3a 1px;
+  -webkit-text-stroke: #3a3a3a 1px;
 }
 
-/* @media screen and (min-width: 450px) {
-  
-} */
+@media screen and (min-width: 1280px) {
+  .scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
