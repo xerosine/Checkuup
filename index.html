@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/styles/output.css" />
     <link rel="stylesheet" href="./assets/styles/custom.css" />
   </head>
-  <body class="inter relative bg-[#eeeeee]">
+  <body class="inter relative bg-[#eeeeee] scroll-smooth">
     <div
       class="fixed left-[62%] sm:left-[39%] top-4 z-55 opacity-0 transition-all duration-500 delay-50 nav-hide md:hidden"
     >
@@ -50,11 +50,11 @@
           <img src="./assets/images/CheckUup logo 3.png" alt="" class="" />
         </div>
         <div class="flex flex-col mt-[10rem] pl-6">
-          <p class="text-white text-[1.25rem] font-semibold mb-12">
+          <a href="#corporate-partnership" class="text-white text-[1.25rem] font-semibold mb-12 cursor-pointer">
             Corporate Wellness
-          </p>
-          <p class="text-white text-[1.25rem] font-semibold mb-12">Partners</p>
-          <p class="text-white text-[1.25rem] font-semibold mb-12">Contact</p>
+          </a>
+          <a href="#corporate-partnership" class="text-white text-[1.25rem] font-semibold mb-12 cursor-pointer">Partners</a>
+          <a class="text-white text-[1.25rem] font-semibold mb-12 cursor-pointer">Contact</a>
         </div>
         <div class="absolute bottom-7 w-full text-center">
           <button
@@ -67,20 +67,20 @@
     </nav>
 
     <main class="min-h-screen">
-      <header class="md:flex md:items-center md:relative md:overflow-hidden md:bg-white md:pt-[5.5rem] -z-4">
+      <header class="md:flex md:items-center md:relative md:overflow-hidden md:bg-white md:pt-[5.5rem] z-3">
         <nav class="hidden md:flex w-full bg-white justify-between lg:justify-around items-center absolute top-0 py-3 lg:py-6 px-8 z-50">
           <div class="flex min-w-[470px] lg:w-[50%] justify-between items-center">
             <div class="w-[7rem] lg:w-[8rem]">
                         <img src="./assets/images/CheckUup logo 3.png" alt="" class="w-full pb-2.5" />
             </div>
             <div class="flex text-[.9rem] lg:w-[65%] lg:justify-around lg:text-center">
-              <div class="w-fit lg:w-[45%] px-3 lg:px-0">Corporate Wellness</div>
-              <div class="w-fit lg:w-[18%] px-3 lg:px-0">Partner</div>
-              <div class="w-fit lg:w-[18%] px-3 lg:px-0">Contact</div>
+              <a href="#corporate-partnership" class="w-fit lg:w-[45%] px-3 lg:px-0 cursor-pointer">Corporate Wellness</a>
+              <a href="#corporate-partnership" class="w-fit lg:w-[18%] px-3 lg:px-0 cursor-pointer">Partner</a>
+              <a href="" class="w-fit lg:w-[18%] px-3 lg:px-0 cursor-pointer">Contact</a>
             </div>
           </div>
           <button
-            class="bg-primary text-white w-[12rem] p-2 font-semibold rounded-md"
+            class="bg-primary text-white w-[12rem] p-2 font-semibold rounded-md cursor-pointer"
           >
             Join the Movement
           </button>
@@ -103,7 +103,7 @@
             crisis. CheckUup is here to change that.
           </p>
           <button
-            class="w-3/4 py-2 px-6 mt-8 mb-6 md:mb-[4.5rem] bg-primary text-white md:text-[1.25rem] lg:text-[1.5rem] rounded-md font-semibold max-w-[270px]"
+            class="w-3/4 py-2 px-6 mt-8 mb-6 md:mb-[4.5rem] bg-primary text-white md:text-[1.25rem] lg:text-[1.5rem] rounded-md font-semibold max-w-[270px] cursor-pointer"
           >
             Join The Movement
           </button>
@@ -122,7 +122,7 @@
               alt="Video thumbnail"
             />
             <div class="absolute inset-0 flex items-center justify-center">
-              <button class="">
+              <button class="cursor-pointer">
                 <svg
                   width="32"
                   height="35"
@@ -342,14 +342,14 @@
           </ul>
         </div>
         <div class="flex lg:justify-between max-w-[380px] lg:max-w-[500px]">
-          <div class="w-[50%] lg:w-[45%] pr-3">
+          <div class="w-[50%] lg:w-[45%] pr-3 cursor-pointer">
             <img
               src="./assets/images/google-play.png"
               alt=""
               class="max-w-full lg:w-full border-[.68px] border-[#3a3a3a]"
             />
           </div>
-          <div class="w-[50%] lg:w-[45%] pr-3">
+          <div class="w-[50%] lg:w-[45%] pr-3 cursor-pointer">
             <img
               src="./assets/images/app-store.png"
               alt=""
@@ -362,7 +362,7 @@
           <div
             class="absolute left-[50%] -translate-x-[50%] lg:left-[5%] xl:left-[7%] lg:-translate-x-0 md:top-[50%] md:-translate-y-[50%] md: w-3/4 max-w-[210px] md:max-w-[225px] lg:w-[400px] xl:w-[460px] lg:max-w-none phone-img-container"
           >
-            <img src="./assets/images/app-landing-img.png" alt="" class="lg:w-full" />
+            <img src="./assets/images/app-landing-img-lg.png" alt="" class="lg:w-full" />
           </div>
         </div>
       </section>
@@ -506,7 +506,7 @@
               >
             </div>
             <button
-              class="text-white bg-[#007aff] py-2 px-8 font-bold rounded-md"
+              class="text-white bg-[#007aff] py-2 px-8 font-bold rounded-md cursor-pointer"
             >
               Join Now
             </button>
@@ -1119,7 +1119,7 @@
                 5/5 <span class="text-[#777777]">560 REVIEWS</span>
               </p>
               <button
-                class="bg-primary text-white md:text-[1.25rem] font-bold py-2 text-center w-[90%] rounded-lg"
+                class="bg-primary text-white md:text-[1.25rem] font-bold py-2 text-center w-[90%] rounded-lg cursor-pointer"
               >
                 Download
               </button>
@@ -1140,7 +1140,7 @@
         id="corporate-partnership"
         class="w-full py-[4rem] corpart-sect h-[1470px] sm:h-[1510px] md:h-[1770px] xl:h-[1900px] transition-[height]"
       >
-        <div class="flex w-full roboto px-3 max-w-[400px] mx-auto sm:ml-0 md:pr-auto md:border-b-1 md:border-[#666666] md:max-w-none">
+        <div class="flex w-full roboto pl-0 max-w-[90%] md:max-w-[400px] md:mx-auto sm:ml-0 md:pr-auto md:border-b-1 md:border-[#666666] md:max-w-none">
           <div
             class="border-b-1 border-[#959595] text-[#666666] md:text-[1.5rem] xl:text-[2rem] transition duration-900 text-center font-medium md:font-semibold xl:font-bold w-1/2 cursor-pointer corpart-btn md:border-b-2 md:w-[35%] pb-3"
             data-index="0"
@@ -1162,13 +1162,13 @@
             <img src="./assets/images/vector-primary.png" alt="" class="">
           </div>
             <div
-              class="w-full xl:flex xl:justify-center xl:items-center max-w-[350px] md:max-w-[500px] xl:min-w-[1150px] xl:max-w-[1300px] h-[28rem] sm:h-[35rem] md:h-[44rem] xl:h-[19rem] mx-auto py-8 xl:py-0 xl:mt-0 sm:pb-0 px-5 relative"
+              class="w-full xl:flex xl:justify-center xl:items-center max-w-[390px] sm:max-w-[500px] md:max-w-[550px] xl:min-w-[1150px] xl:max-w-[1300px] h-[32rem] sm:h-[38rem] md:h-[42rem] xl:h-[19rem] mx-auto py-8 xl:py-0 xl:mt-0 sm:pb-0 px-5 md:px-0 relative"
             >
-              <div class="rounded-t-3xl xl:rounded-3xl h-[50%] sm:h-[55%] md:h-[50%] xl:h-full overflow-hidden xl:order-2 xl:max-w-[350px] xl:max-h-[350px]">
+              <div class="rounded-t-3xl xl:rounded-3xl h-[50%] sm:h-[55%] md:h-[56%] md:w-full xl:h-full overflow-hidden xl:order-2 xl:max-w-[430px] xl:max-h-[350px]">
                 <img
                   src="./assets/images/checkuup-img-4.jpg"
                   alt=""
-                  class="h-full xl:max-h-full"
+                  class="h-full w-full xl:max-h-full"
                 />
               </div>
               <div class="relative xl:order-1 xl:h-full xl:w-[60%] xl:flex xl:items-center">
@@ -1192,11 +1192,11 @@
             </div>
             <div class="mt-5 xl:mt-12">
               <h3
-                class="text-primary text-[1.25rem] md:text-[1.5rem] xl:text-[2rem] font-bold mb-3 px-3 text-center"
+                class="text-primary text-[1.25rem] md:text-[1.5rem] xl:text-[2rem] max-w-[390px] sm:max-w-[500px] md:max-w-[550px] xl:max-w-[650px] mx-auto font-bold mb-3 px-3 text-center"
               >
                 How CheckUup Supports Organizations
               </h3>
-              <p class="text-[.75rem] md:text-[1rem] text-center px-3 max-w-[500px] xl:max-w-[650px] mx-auto">
+              <p class="text-[.75rem] md:text-[1rem] text-center px-3 max-w-[390px] sm:max-w-[500px] md:max-w-[550px] xl:w-[50%] xl:max-w-[1000px] mx-auto">
                 Companies that invest in employee well-being see higher
                 retention rates and better team collaboration.
               </p>
@@ -1242,7 +1242,7 @@
                 </div>
               </div>
               <button
-                class="bg-primary text-white md:text-[1.25rem] font-bold rounded-xl min-w-[180px] md:min-w-[230px] py-2 xl:px-4 mx-auto block my-10 xl:mt-12 xl:mb-20"
+                class="bg-primary text-white md:text-[1.25rem] font-bold rounded-xl min-w-[240px] md:min-w-[290px] py-2 xl:px-4 mx-auto block my-10 xl:mt-12 xl:mb-20 cursor-pointer"
               >
                 Explore corporate wellness
               </button>
@@ -1441,13 +1441,13 @@
             <img src="./assets/images/vector-primary.png" alt="" class="">
           </div>
             <div
-              class="w-full xl:flex xl:justify-center xl:items-center max-w-[350px] md:max-w-[500px] xl:min-w-[1150px] xl:max-w-[1300px] h-[28rem] sm:h-[35rem] md:h-[44rem] xl:h-[19rem] mx-auto py-8 xl:py-0 xl:mt-[5rem] sm:pb-0 px-5 relative"
+              class="w-full xl:flex xl:justify-center xl:items-center max-w-[390px] sm:max-w-[500px] md:max-w-[600px] xl:min-w-[1150px] xl:max-w-[1300px] h-[28rem] sm:h-[35rem] md:h-[39rem] xl:h-[19rem] mx-auto py-8 xl:py-0 xl:mt-[5rem] sm:pb-0 px-5 md:px-0 relative"
             >
-              <div class="rounded-t-3xl xl:rounded-3xl h-[50%] sm:h-[55%] md:h-[50%] xl:h-full overflow-hidden xl:order-2 xl:max-w-[350px] xl:max-h-[350px]">
+              <div class="rounded-t-3xl xl:rounded-3xl h-[50%] sm:h-[58%] md:h-[60%] xl:h-full overflow-hidden xl:order-2 xl:max-w-[430px] xl:max-h-[350px]">
                 <img
                   src="./assets/images/checkuup-img-3.png"
                   alt=""
-                  class="h-full"
+                  class="h-full w-full"
                 />
               </div>
               <div class="relative xl:order-1 xl:h-full xl:w-[60%] xl:flex xl:items-center">
@@ -1470,11 +1470,11 @@
             </div>
             <div class="mt-5 xl:mt-12">
               <h3
-                class="text-primary text-[1.25rem] md:text-[1.5rem] xl:text-[2rem] font-bold mb-3 px-3 text-center"
+                class="text-primary text-[1.25rem] md:text-[1.5rem] xl:text-[2rem] max-w-[390px] sm:max-w-[500px] md:max-w-[600px] xl:max-w-[650px] mx-auto font-bold mb-3 px-3 text-center"
               >
                 Why Partner with CheckUup?
               </h3>
-              <p class="text-[.75rem] md:text-[1rem] text-center px-3 max-w-[500px] xl:max-w-[650px] mx-auto">
+              <p class="text-[.75rem] md:text-[1rem] text-center px-3 max-w-[390px] sm:max-w-[500px] md:max-w-[600px] xl:w-[50%] xl:max-w-[1000px] mx-auto">
                 We believe that mental wellness is a shared responsibility. By
                 collaborating with trusted organizations, we can provide
               </p>
@@ -1543,7 +1543,7 @@
                 </div>
               </div>
               <button
-                class="bg-primary text-white md:text-[1.25rem] font-bold rounded-xl min-w-[180px] md:min-w-[230px] py-2 mx-auto block my-10 xl:mt-12 xl:mb-20"
+                class="bg-primary text-white md:text-[1.25rem] font-bold rounded-xl min-w-[180px] md:min-w-[230px] py-2 mx-auto block my-10 xl:mt-12 xl:mb-20 cursor-pointer"
               >
                 Become a Partner
               </button>
@@ -1761,8 +1761,8 @@
                   class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
                 >
                   <svg
-                    width="18"
-                    height="13"
+                    width="14"
+                    height="10"
                     viewBox="0 0 18 13"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1797,8 +1797,8 @@
                   class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
                 >
                   <svg
-                    width="18"
-                    height="13"
+                    width="14"
+                    height="10"
                     viewBox="0 0 18 13"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1834,8 +1834,8 @@
                   class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
                 >
                   <svg
-                    width="18"
-                    height="13"
+                    width="14"
+                    height="10"
                     viewBox="0 0 18 13"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1870,8 +1870,8 @@
                   class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
                 >
                   <svg
-                    width="18"
-                    height="13"
+                    width="14"
+                    height="10"
                     viewBox="0 0 18 13"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1906,8 +1906,8 @@
                   class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
                 >
                   <svg
-                    width="18"
-                    height="13"
+                    width="14"
+                    height="10"
                     viewBox="0 0 18 13"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1942,8 +1942,8 @@
                   class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
                 >
                   <svg
-                    width="18"
-                    height="13"
+                    width="14"
+                    height="10"
                     viewBox="0 0 18 13"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1978,8 +1978,8 @@
                   class="bg-primary py-2 px-1.5 rounded-full cursor-pointer faq-btn transition duration-200"
                 >
                   <svg
-                    width="18"
-                    height="13"
+                    width="14"
+                    height="10"
                     viewBox="0 0 18 13"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2068,14 +2068,14 @@
             </div>
           </div>
           <div class="flex xl:justify-evenly max-w-[380px] xl:w-[400px]">
-            <div class="w-[50%] max-w-[150px] pr-3">
+            <div class="w-[50%] max-w-[150px] pr-3 cursor-pointer">
               <img
                 src="./assets/images/google-play.png"
                 alt=""
                 class="max-w-full border-[.68px] border-[#3a3a3a]"
               />
             </div>
-            <div class="w-[50%] max-w-[150px] pr-3">
+            <div class="w-[50%] max-w-[150px] pr-3 cursor-pointer">
               <img
                 src="./assets/images/app-store.png"
                 alt=""
@@ -2094,30 +2094,30 @@
             © 2025 Checkup.com . All rights reserved
           </p>
           <div class="flex max-w-[340px] md:min-w-[350px] xl:w-[550px] xl:max-w-[700px] pl-.5">
-            <p class="nunito-sans md:text-[1.25rem] font-semibold mr-auto">Terms of Service</p>
+            <p class="nunito-sans md:text-[1.25rem] font-semibold mr-auto cursor-pointer">Terms of Service</p>
             <div class="flex">
-              <div class="">
+              <div class="cursor-pointer">
                 <img
                   src="./assets/images/facebook-icon.png"
                   alt=""
                   class="mx-2"
                 />
               </div>
-              <div class="">
+              <div class="cursor-pointer">
                 <img
                   src="./assets/images/snapchat-icon.png"
                   alt=""
                   class="mx-2"
                 />
               </div>
-              <div class="">
+              <div class="cursor-pointer">
                 <img
                   src="./assets/images/linkedIn-icon.png"
                   alt=""
                   class="mx-2"
                 />
               </div>
-              <div class="">
+              <div class="cursor-pointer">
                 <img
                   src="./assets/images/instagram-icon.png"
                   alt=""
