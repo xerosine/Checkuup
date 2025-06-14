@@ -11,6 +11,8 @@ import path from "path";
 dotenv.config();
 
 const isProduction = process.env.NODE_ENV === "production";
+console.log(process.env.NODE_ENV);
+
 // const dbURI = isProduction
 //   ? process.env.DB_URI
 //   : "mongodb://127.0.0.1:27017/checkuup";
@@ -46,9 +48,11 @@ app.get("/terms-and-conditions", (req, res) => {
 });
 
 app.use((req, res) => {
-    res.status(404).send("<h3>Error 404, Invalid Resource Location</h3>");
+  res.status(404).send("<h3>Error 404, Invalid Resource Location</h3>");
 });
 
-app.listen(port, () => {
-  console.log("Listening on port", port);
-});
+if (!isProduction) {
+  app.listen(port, () => {
+    console.log("Listening on port", port);
+  });
+}
