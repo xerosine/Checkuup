@@ -51,8 +51,6 @@ app.use((req, res) => {
   res.status(404).send("<h3>Error 404, Invalid Resource Location</h3>");
 });
 
-if (!isProduction) {
-  app.listen(port, () => {
-    console.log("Listening on port", port);
-  });
-}
+app.listen(port, () => {
+  console.log("Listening on port", port);
+});
