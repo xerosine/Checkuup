@@ -9,7 +9,129 @@
   </head>
   <body class="inter relative bg-[#eeeeee] scroll-smooth">
     <div
-      class="fixed left-[62%] sm:left-[39%] top-4 z-55 opacity-0 transition-all duration-500 delay-50 nav-hide md:hidden"
+      id="messageBox"
+      class="fixed font-medium top-3 -right-70 rounded-sm py-3 md:py-5 w-[13rem] md:w-[18rem] md:text-[1.25rem] bg-[#eee] border-l-4 opacity-0 transition-translate duration-300 ease-linear z-80"
+    >
+      <p class="px-3 md:px-4"></p>
+      <div
+        id="messageTimer"
+        class="absolute bottom-0 right-0 w-0 h-[2px] transition-all duration-5000 ease-linear"
+      ></div>
+    </div>
+    <div
+      id="modal"
+      class="fixed z-70 bg-black/75 h-screen w-full overflow-y-scroll hidden"
+    >
+      <div
+        class="absolute h-[40rem] lg:h-[42rem] min-h-screen w-full bg-black/50"
+      ></div>
+      <section
+        class="w-full h-[40rem] lg:h-[42rem] min-h-screen pb-[4rem] pt-[17vh] absolute top-0 left-[50%] -translate-x-[50%]"
+      >
+        <div
+          onclick="closeModal()"
+          class="absolute right-8 top-8 cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            width="30"
+            height="30"
+            fill="#FDC553"
+          >
+            <!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </div>
+        <div
+          class="w-full lg:flex lg:justify-center lg:space-x-10 lg:max-w-[945px] xl:max-w-[1050px] mx-auto"
+        >
+          <div
+            class="hidden lg:block lg:w-1/2 lg:h-[554px] bg-[url(../images/contact-us.jpg)] bg-cover bg-position-[30%_center] rounded-2xl"
+          >
+            <!-- <img src="/images/contact-us.jpg" alt="" class=""> -->
+          </div>
+          <div
+            class="max-w-[320px] md:w-[60%] md:max-w-[600px] lg:max-w-[450px] lg:w-1/2 mx-auto"
+          >
+            <form action="javascript:void(0)" method="post">
+              <div class="mb-5">
+                <label
+                  for="name"
+                  class="ml-1 font-medium mb-2 block text-[#ddd]"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="py-2 px-2 rounded-lg bg-white text-[1.25rem] placeholder:text-[#737373] w-full focus-visible:outline-[#0098db]"
+                  placeholder="Enter name here"
+                />
+              </div>
+              <div class="mb-5">
+                <label
+                  for="email"
+                  class="ml-1 font-medium mb-2 block text-[#ddd]"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="py-2 px-2 rounded-lg bg-white text-[1.25rem] placeholder:text-[#737373] w-full focus-visible:outline-[#0098db]"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="mb-5">
+                <label
+                  for="subject"
+                  class="ml-1 font-medium mb-2 block text-[#ddd]"
+                  >Subject</label
+                >
+                <select
+                  name="subject"
+                  required
+                  class="py-2 px-2 rounded-lg bg-white text-black text-[1.25rem] invalid:text-[#737373] w-full focus-visible:outline-[#0098db]"
+                >
+                  <option selected disabled value="">Select Option</option>
+                  <option value="generalInquiry">General Inquiry</option>
+                  <option value="corporateWellness">Corporate Wellness</option>
+                  <option value="partnerships">Partnerships</option>
+                  <option value="media">Media</option>
+                  <option value="technicalSupport">Technical Support</option>
+                </select>
+              </div>
+              <div class="mb-5">
+                <label
+                  for="message"
+                  class="ml-1 font-medium mb-2 block text-[#ddd]"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  class="py-2 px-2 rounded-lg bg-white text-[1.25rem] placeholder:text-[#737373] focus-visible:outline-[#0098db] h-[10rem] w-full"
+                  placeholder="Enter Message here"
+                ></textarea>
+              </div>
+              <div class="">
+                <button
+                  type="submit"
+                  class="bg-primary text-white rounded-lg py-2 w-full font-bold text-[1.25rem]"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      class="fixed left-[62%] sm:left-[39%] top-4 z-55 opacity-0 transition-all duration-500 delay-50 nav-hide md:hidden cursor-pointer"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +147,7 @@
       </svg>
     </div>
     <div
-      class="fixed left-5 top-4 z-54 transition-all duration-500 nav-show md:hidden"
+      class="fixed left-5 top-4 z-54 transition-all duration-500 nav-show md:hidden cursor-pointer"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -42,26 +164,30 @@
     </div>
 
     <nav
+      id="sidebar"
       class="fixed h-full z-50 bg-black/75 overflow-hidden transition-all duration-500 w-0 md:hidden"
     >
       <div class="bg-black/50 absolute w-full h-full"></div>
       <div class="relative h-full py-5 w-[75vw] sm:w-[50vw]">
         <div class="w-fit mx-auto mt-8">
-          <img src="/images/CheckUup logo 3.png" alt="" class="" />
+          <a href="/"><img src="/images/CheckUup logo 3.png" alt="" class="" /></a>
         </div>
         <div class="flex flex-col mt-[10rem] pl-6">
           <a
-            href="#corporate-partnership"
+            href="/#corporate-partnership"
+            onclick="corpartFn(0)"
             class="text-white text-[1.25rem] font-semibold mb-12 cursor-pointer"
           >
             Corporate Wellness
           </a>
           <a
-            href="#corporate-partnership"
+            href="/#corporate-partnership"
+            onclick="corpartFn(1)"
             class="text-white text-[1.25rem] font-semibold mb-12 cursor-pointer"
             >Partners</a
           >
           <a
+            href="contact-us"
             class="text-white text-[1.25rem] font-semibold mb-12 cursor-pointer"
             >Contact</a
           >
@@ -98,19 +224,19 @@
               class="flex text-[.9rem] lg:w-[65%] lg:justify-around lg:text-center"
             >
               <a
-                href="#corporate-partnership"
+                href="/#corporate-partnership"
                 onclick="corpartFn(0)"
                 class="w-fit lg:w-[45%] px-3 lg:px-0 cursor-pointer"
                 >Corporate Wellness</a
               >
               <a
-                href="#corporate-partnership"
+                href="/#corporate-partnership"
                 onclick="corpartFn(1)"
                 class="w-fit lg:w-[18%] px-3 lg:px-0 cursor-pointer"
                 >Partner</a
               >
               <a
-                href="#footer"
+                href="/contact-us"
                 class="w-fit lg:w-[18%] px-3 lg:px-0 cursor-pointer"
                 >Contact</a
               >
@@ -151,12 +277,13 @@
               tech-driven way to support mental well-being before it becomes a
               crisis. CheckUup is here to change that.
             </p>
-            <a
-              href="#joinTheMovement"
-              class="w-3/4 py-2 px-6 mt-8 mb-6 md:mb-[4.5rem] bg-primary text-white md:text-[1.25rem] lg:text-[1.5rem] rounded-md font-semibold max-w-[270px] cursor-pointer block"
+            <button
+              class="w-3/4 py-2 px-6 mt-8 mb-6 md:mb-[4.5rem] bg-primary text-white md:text-[1.25rem] lg:text-[1.5rem] rounded-md font-semibold max-w-[270px] cursor-pointer"
             >
-              Join The Movement
-            </a>
+              <a href="#joinTheMovement" class="block text-center">
+                Join The Movement
+              </a>
+            </button>
           </div>
         </div>
       </header>
@@ -583,10 +710,11 @@
           />
         </div>
         <div
-          class="pt-[10rem] pl-5 pr-4 cont max-w-[490px] md:max-w-[760px] lg:max-w-[950px] mx-auto md:pt-14 md:px-4 md:absolute md:top-[50%] md:-translate-y-[50%] md:left-[50%] md:-translate-x-[50%] md:w-[95%]"
+          class="pt-[10rem] pl-5 pr-4 cont max-w-[490px] md:max-w-[760px] lg:max-w-[950px] xl:max-w-none mx-auto md:pt-14 md:px-4 md:absolute md:top-[50%] md:-translate-y-[50%] md:left-[50%] md:-translate-x-[50%] md:w-[95%]"
         >
-          <div class="md:flex md:justify-between">
-            <div class="md:w-[50%]">
+          <div class="md:flex md:justify-between xl:justify-around">
+            <div class="md:w-[50%] xl:w-[40%]">
+              <div class="xl:max-w-[425px] mx-auto">
               <h4 class="font-semibold mb-2 md:text-[1.25rem]">
                 Join the Movement
               </h4>
@@ -600,35 +728,43 @@
                 resources can help us change lives
               </p>
             </div>
-            <div class="md:w-[40%]">
+            </div>
+            <form id="joinForm" action="javascript:void(0)" class="md:w-[40%] xl:w-[55%] xl:flex xl:justify-around xl:max-w-[535px]">
+              <div class="xl:max-w-[330px]">
               <input
                 type="text"
-                name=""
+                name="name"
+                required
                 class="rounded-lg w-full text-[.875rem] placeholder:text-black placeholder:text-[.875rem] p-3 bg-[#ebedf0] mb-4 focus-visible:outline-[#007aff]"
                 placeholder="Full Name"
               />
               <input
-                type="text"
-                name=""
+                type="email"
+                name="email"
+                required
                 class="rounded-lg w-full text-[.875rem] placeholder:text-black placeholder:text-[.875rem] p-3 bg-[#ebedf0] mb-4 focus-visible:outline-[#007aff]"
                 placeholder="Enter Email Address"
               />
               <div class="flex items-center mb-5">
                 <input
                   type="checkbox"
-                  name=""
+                  id="agree"
+                  value="off"
                   class="p-3 appearance-none bg-[#d9d9d9] rounded-md checked:bg-[#007aff]"
                 />
                 <label for="" class="text-[.75rem] pl-2"
                   >I agree to receive marketing emails from Checkup</label
                 >
               </div>
+            </div>
               <button
-                class="text-white bg-[#007aff] py-2 px-8 font-bold rounded-md cursor-pointer"
+              id="joinBtn"
+                type="submit"
+                class="text-black bg-[#ddd] py-2 px-8 font-bold rounded-md xl:h-fit transition-all"
               >
                 Join Now
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
@@ -1294,19 +1430,19 @@
       </section>
       <section
         id="corporate-partnership"
-        class="w-full py-[4rem] corpart-sect h-[1470px] sm:h-[1510px] md:h-[1770px] xl:h-[1900px] transition-[height]"
+        class="w-full py-[4rem] corpart-sect h-[1530px] sm:h-[1510px] md:h-[1770px] xl:h-[1900px] transition-[height]"
       >
         <div
-          class="flex w-full roboto pl-0 max-w-[90%] md:max-w-[400px] md:mx-auto sm:ml-0 md:pr-auto md:border-b-1 md:border-[#666666] md:max-w-none"
+          class="flex w-full roboto pl-0 max-w-[90%] md:max-w-none md:mx-auto sm:ml-0 md:pr-auto md:border-b-1 md:border-[#666666]"
         >
           <div
-            class="border-b-1 border-[#959595] text-[#666666] md:text-[1.5rem] xl:text-[2rem] transition duration-900 text-center font-medium md:font-semibold xl:font-bold w-1/2 cursor-pointer corpart-btn md:border-b-2 md:w-[35%] pb-3"
+            class="border-b-1 border-[#959595] text-[#666666] md:text-[1.5rem] xl:text-[2rem] transition duration-900 text-center font-medium md:font-semibold xl:font-bold w-1/2 lg:max-w-[350px] lg:ml-10 xl:ml-20 cursor-pointer corpart-btn md:border-b-2 md:w-[35%] pb-3"
             data-index="0"
           >
             Corporate Wellness
           </div>
           <div
-            class="border-b-1 border-[#959595] text-[#666666] md:text-[1.5rem] xl:text-[2rem] transition duration-900 text-center font-medium md:font-semibold xl:font-bold w-1/2 cursor-pointer corpart-btn border-b-2 md:border-b-2 md:border-b-4 border-primary text-primary md:w-[35%] pb-3"
+            class="border-b-1 border-[#959595] text-[#666666] md:text-[1.5rem] xl:text-[2rem] transition duration-900 text-center font-medium md:font-semibold xl:font-bold w-1/2 lg:max-w-[350px] cursor-pointer corpart-btn border-b-2 md:border-b-2 md:border-b-4 border-primary text-primary md:w-[35%] pb-3"
             data-index="1"
           >
             Partnership
@@ -1414,6 +1550,7 @@
                 </div>
               </div>
               <button
+                onclick="openModal()"
                 class="bg-primary text-white md:text-[1.25rem] font-bold rounded-xl min-w-[240px] md:min-w-[290px] py-2 xl:px-4 mx-auto block my-10 xl:mt-12 xl:mb-20 cursor-pointer"
               >
                 Explore corporate wellness
@@ -1672,7 +1809,7 @@
               </p>
               <div class="my-6 md:my-10">
                 <div
-                  class="flex overflow-x-scroll scrollbar-custom xl:flex-wrap scroll-smooth snap-x snap-mandatory space-x-4 xl:space-x-6 xl:space-y-6 xl:justify-center xl:mx-auto"
+                  class="flex overflow-x-scroll scrollbar-custom xl:flex-wrap scroll-smooth snap-x snap-mandatory space-x-4 xl:space-x-6 xl:space-y-6 xl:justify-center xl:mx-auto xl:max-w-[1300px]"
                 >
                   <div
                     class="pt-8 pb-4 px-6 ml-[2rem] bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center xl:w-[360px] xl:min-w-0 h-[260px]"
@@ -1730,7 +1867,7 @@
                     </p>
                   </div>
                   <div
-                    class="pt-8 pb-4 px-6 mr-[3rem] bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center xl:w-[360px] xl:min-w-0 h-[260px] xl:h-[220px]"
+                    class="pt-8 pb-4 px-6 mr-[3rem] xl:mr-0 bg-white rounded-xl text-center min-w-[300px] md:min-w-[400px] snap-center xl:w-[360px] xl:min-w-0 h-[260px] xl:h-[220px]"
                   >
                     <p
                       class="text-[#1a1a1a] text-[.875rem] md:text-[1.25rem] font-bold mb-3 xl:mb-5"
@@ -1745,6 +1882,7 @@
                 </div>
               </div>
               <button
+                onclick="openModal()"
                 class="bg-primary text-white md:text-[1.25rem] font-bold rounded-xl min-w-[180px] md:min-w-[230px] py-2 mx-auto block my-10 xl:mt-12 xl:mb-20 cursor-pointer"
               >
                 Become a Partner
@@ -2438,9 +2576,6 @@
           .querySelector("#joinTheMovement .cont")
           .classList.add("px-10", "pt-[10rem]");
 
-        //download now
-        // document.querySelector("#downloadNow .phone-img-cont").classList.replace("max-w-[110px]", "max-w-[135px]")
-
         //footer
         document
           .querySelectorAll("footer>div")[0]
@@ -2450,11 +2585,12 @@
           .classList.replace("px-3", "px-8");
       }
 
-      const nav = document.querySelector("nav");
+      const nav = document.querySelector("#sidebar");
       const showNavBtn = document.querySelector(".nav-show");
       const hideNavBtn = document.querySelector(".nav-hide");
 
-      const showNav = () => {
+      const showNav = (e) => {
+        e.stopPropagation();
         nav.classList.add("w-3/4", "sm:w-1/2");
         hideNavBtn.classList.remove("left-5", "opacity-0", "rotate-180");
         showNavBtn.classList.add("left-53", "sm:left-30", "opacity-0", "z-50");
@@ -2468,6 +2604,12 @@
         hideNavBtn.classList.add("left-5", "opacity-0", "z-55", "rotate-180");
         showNavBtn.addEventListener("click", showNav);
         hideNavBtn.removeEventListener("click", hideNav);
+      };
+
+      window.onclick = (e) => {
+        if (!nav.classList.contains("hidden") && !nav.contains(e.target)) {
+          hideNav();
+        }
       };
 
       showNavBtn.addEventListener("click", showNav);
@@ -2554,6 +2696,7 @@
           );
           partner.classList.remove("opacity-100", "z-5");
           corpwell.classList.add("opacity-100", "z-5");
+          corpartSect.classList.replace("h-[1530px]", "h-[1580px]");
           corpartSect.classList.replace("md:h-[1770px]", "md:h-[1830px]");
           corpartSect.classList.replace("xl:h-[1900px]", "xl:h-[1630px]");
           // corpartSect.classList.add("h-[1470px]", "sm:h-[1510px]");
@@ -2575,6 +2718,7 @@
           );
           corpwell.classList.remove("opacity-100", "z-5");
           partner.classList.add("opacity-100", "z-5");
+          corpartSect.classList.replace("h-[1580px]", "h-[1530px]");
           corpartSect.classList.replace("md:h-[1830px]", "md:h-[1770px]");
           corpartSect.classList.replace("xl:h-[1630px]", "xl:h-[1900px]");
           // corpartSect.classList.add("h-[1470px]", "sm:h-[1510px]");
@@ -2613,6 +2757,124 @@
           }
         });
       });
+
+      function openModal() {
+        document.body.classList.add("overflow-hidden");
+        document.getElementById("modal").classList.remove("hidden");
+      }
+
+      function closeModal() {
+        document.body.classList.remove("overflow-hidden");
+        document.getElementById("modal").classList.add("hidden");
+      }
+
+      const checkAgree = document.querySelector("#agree")
+      console.log(checkAgree);
+      
+      checkAgree.onclick = (e) => {
+        if (e.target.value === 'off') {
+          e.target.value = 'on'
+          joinForm.onsubmit = handleJoinForm
+          document.querySelector("#joinBtn").classList.replace("bg-[#ddd]", "bg-[#007aff]")
+          document.querySelector("#joinBtn").classList.add("text-white", "cursor-pointer")
+        } else {
+          e.target.value = 'off'
+          joinForm.onsubmit = null
+          document.querySelector("#joinBtn").classList.replace("bg-[#007aff]", "bg-[#ddd]")
+          document.querySelector("#joinBtn").classList.remove("text-white", "cursor-pointer")
+        }
+        console.log(e.target.value);
+      }
+
+      const contactForm = document.querySelector("form");
+
+      const handleContactForm = async (e) => {
+        let status
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData.entries());
+        for (key in data) {
+          if (!data[key]) {
+            showMessage(
+              `The ${key} field is required!`,
+              "border-red-500",
+              "bg-red-500"
+            );
+          }
+        }
+        await fetch("contact-us", {
+          method: "post",
+          body: formData,
+        })
+          .then((res) => {
+            status = res.status
+            return res.json()
+          })
+          .then(data => {
+            if (status === 200) {
+            showMessage(data.message, "border-green-500", "bg-green-500")
+          } else {
+            showMessage(data.message, "border-red-500", "bg-red-500")
+          }
+          })
+          .catch((err) => {
+            const message = err.message || "Something went wrong";
+            showMessage(message, "border-red-500", "bg-red-500");
+          });
+      }
+
+      contactForm.addEventListener("submit", handleContactForm);
+      
+      const joinForm = document.querySelector("#joinForm");
+
+      const handleJoinForm = async (e) => {
+        let status
+        const formData = new FormData(joinForm);
+        const data = Object.fromEntries(formData.entries());
+        for (key in data) {
+          if (!data[key]) {
+            showMessage(
+              `The ${key} field is required!`,
+              "border-red-500",
+              "bg-red-500"
+            );
+          }
+        }
+        await fetch("join-the-movement", {
+          method: "post",
+          body: formData,
+        })
+          .then((res) => {
+            status = res.status
+            return res.json()
+          })
+          .then(data => {
+            console.log(data);
+            console.log(status);
+            
+            if (status === 200) {
+            showMessage(data.message, "border-green-500", "bg-green-500")
+          } else {
+            showMessage(data.message, "border-red-500", "bg-red-500")
+          }
+          })
+          .catch((err) => {
+            const message = err.message || "Something went wrong";
+            showMessage(message, "border-red-500", "bg-red-500");
+          });
+      };
+
+      const messageBoxCont = document.querySelector("#messageBox");
+      const messageBox = document.querySelector("#messageBox p");
+      const messageTimer = document.querySelector("#messageTimer");
+      function showMessage(message, border, timerColor) {
+        messageBox.textContent = message;
+        messageBoxCont.classList.add(border, "-translate-x-75", "opacity-100");
+        messageTimer.classList.add(timerColor, "w-full");
+        setTimeout(() => {
+          messageBoxCont.classList.remove(border, "-translate-x-75", "opacity-100");
+          messageTimer.classList.remove(timerColor, "w-full");
+        }, 5000);
+      }
     </script>
   </body>
 </html>

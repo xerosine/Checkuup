@@ -9,6 +9,16 @@
   </head>
   <body class="inter relative bg-[#f2f2f7] scroll-smooth">
     <div
+      id="messageBox"
+      class="fixed font-medium top-3 -right-40 rounded-sm py-3 md:py-5 w-[13rem] md:w-[18rem] md:text-[1.25rem] bg-[#eee] border-l-4 opacity-0 transition-translate duration-300 ease-linear z-80"
+    >
+      <p class="px-3 md:px-4"></p>
+      <div
+        id="messageTimer"
+        class="absolute bottom-0 right-0 w-0 h-[2px] transition-all duration-5000 ease-linear"
+      ></div>
+    </div>
+    <div
       class="fixed left-[62%] sm:left-[39%] top-4 z-55 opacity-0 transition-all duration-500 delay-50 nav-hide md:hidden"
     >
       <svg
@@ -62,7 +72,6 @@
             >Partners</a
           >
           <a
-            href="contact-us"
             class="text-white text-[1.25rem] font-semibold mb-12 cursor-pointer"
             >Contact</a
           >
@@ -78,7 +87,7 @@
       </div>
     </nav>
 
-    <main class="min-h-screen pb-[500px] md:pb-[370px] lg:pb-[400px]">
+    <main class="min-h-screen pb-[550px] md:pb-[400px] lg:pb-[500px]">
       <header class="bg-white md:pt-[5.5rem] z-3 mb-10">
         <nav
           class="hidden bg-white md:flex w-full justify-between lg:justify-around items-center fixed top-0 py-3 lg:py-6 px-8 z-55"
@@ -106,7 +115,7 @@
                 class="w-fit lg:w-[18%] px-3 lg:px-0 cursor-pointer"
                 >Partner</a
               >
-              <a href="contact-us" class="w-fit lg:w-[18%] px-3 lg:px-0 cursor-pointer"
+              <a href="" class="w-fit lg:w-[18%] px-3 lg:px-0 cursor-pointer"
                 >Contact</a
               >
             </div>
@@ -116,110 +125,94 @@
             class="bg-primary text-white w-[12rem] p-2 font-semibold rounded-md cursor-pointer text-center"
           >
             Join the Movement
-        </a>
+          </a>
         </nav>
         <h1
           class="pt-[4rem] md:pt-[2rem] pb-[2.5rem] text-[1.5rem] md:text-[2.5rem] font-bold text-center"
         >
-          Terms and Conditions
+          Contact Us
         </h1>
       </header>
-      <section class="text-[#918C8C] w-[85%] max-w-[975px] mx-auto mb-14">
-        <h2 class="text-[1.2rem] md:text-[1.5rem] font-semibold mb-4 lg:mb-2">
-          Legal Disclaimer
-        </h2>
-        <p class="text-[.9rem] md:text-[1rem]/[100%] mb-4 lg:mb-[10px]">
-          CheckUup is a support and wellness app designed to foster
-          community-driven mental health awareness. It is not a substitute for
-          professional medical, psychiatric, or psychological advice, diagnosis,
-          or treatment. The app does not provide emergency services or crisis
-          intervention. If you or someone you know is in immediate danger,
-          experiencing a medical emergency, or facing a mental health crisis,
-          please contact local emergency services immediately.
-        </p>
-        <p class="text-[.9rem] md:text-[1rem]/[100%]">
-          CheckUup provides behavioral tracking and check-in notifications based
-          on user engagement data. While we strive for accuracy, we cannot
-          guarantee the detection of all behavioral changes or mental health
-          risks. Users are encouraged to seek professional support if needed.
-        </p>
-      </section>
-      <section class="text-[#918C8C] w-[85%] max-w-[975px] mx-auto mb-14">
-        <h2 class="text-[1.2rem] md:text-[1.5rem] font-semibold mb-4 lg:mb-2">
-          Privacy Policy
-        </h2>
-        <p class="text-[.9rem] md:text-[1rem]/[100%] mb-4 lg:mb-[10px]">
-          We take your privacy seriously and are committed to protecting your
-          personal data. Our Privacy Policy outlines how we collect, use, and
-          store information to ensure a secure and trustworthy experience.
-        </p>
-        <ul
-          class="text-[.9rem] md:text-[1rem]/[100%] list-outside list-disc ml-5"
+      <section class="mx-10 mt-10">
+        <div
+          class="lg:flex lg:justify-center lg:space-x-10 lg:max-w-[945px] xl:max-w-[1050px] lg:mx-auto"
         >
-          <li class="mb-4 lg:mb-[20px]">
-            Data Collection: We collect behavioral and engagement data to
-            monitor trends and facilitate check-in notifications. We do not
-            access private messages or personal conversations.
-          </li>
-          <li class="mb-4 lg:mb-[20px]">
-            User Control: Users control their trusted circle and permission
-            settings, including the option to allow emergency alerts.
-          </li>
-          <li class="mb-4 lg:mb-[20px]">
-            Confidentiality: All personal data is encrypted and shared only with
-            designated trusted contacts and, if permitted, emergency services.
-          </li>
-          <li class="mb-4 lg:mb-[20px]">
-            Third-Party Partnerships: CheckUup partners with mental health
-            organizations to provide resources and support but does not share
-            personal data without explicit consent.
-          </li>
-          <li class="">
-            Account Management: Users can delete their accounts and request data
-            removal at any time.
-          </li>
-        </ul>
+          <div
+            class="hidden lg:block lg:w-1/2 lg:h-[554px] bg-[url(../images/contact-us.jpg)] bg-cover bg-position-[30%_center] rounded-2xl"
+          >
+            <!-- <img src="/images/contact-us.jpg" alt="" class=""> -->
+          </div>
+          <div
+            class="max-w-[320px] md:w-[60%] md:max-w-[600px] lg:max-w-[450px] lg:w-1/2 mx-auto"
+          >
+            <form action="javaScript:void(0)">
+              <div class="mb-5">
+                <label for="name" class="ml-1 font-medium mb-2 block"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="py-2 px-2 rounded-lg bg-white text-[1.25rem] placeholder:text-[#737373] w-full focus-visible:outline-[#0098db]"
+                  placeholder="Enter name here"
+                />
+              </div>
+              <div class="mb-5">
+                <label for="email" class="ml-1 font-medium mb-2 block"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="py-2 px-2 rounded-lg bg-white text-[1.25rem] placeholder:text-[#737373] w-full focus-visible:outline-[#0098db]"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="mb-5">
+                <label for="subject" class="ml-1 font-medium mb-2 block"
+                  >Subject</label
+                >
+                <select
+                  name="subject"
+                  required
+                  class="py-2 px-2 rounded-lg bg-white text-black text-[1.25rem] invalid:text-[#737373] w-full focus-visible:outline-[#0098db]"
+                >
+                  <option selected disabled value="">Select Option</option>
+                  <option value="generalInquiry">General Inquiry</option>
+                  <option value="corporateWellness">Corporate Wellness</option>
+                  <option value="partnerships">Partnerships</option>
+                  <option value="media">Media</option>
+                  <option value="technicalSupport">Technical Support</option>
+                </select>
+              </div>
+              <div class="mb-5">
+                <label for="message" class="ml-1 font-medium mb-2 block"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  class="py-2 px-2 rounded-lg bg-white text-[1.25rem] placeholder:text-[#737373] focus-visible:outline-[#0098db] h-[10rem] w-full"
+                  placeholder="Enter Message here"
+                ></textarea>
+              </div>
+              <div class="">
+                <button
+                  type="submit"
+                  class="bg-primary text-white rounded-lg py-2 w-full font-bold text-[1.25rem]"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
-      <section class="text-[#918C8C] w-[85%] max-w-[975px] mx-auto mb-14">
-        <h2 class="text-[1.2rem] md:text-[1.5rem] font-semibold mb-4 lg:mb-2">
-          Terms Of Service
-        </h2>
-        <p class="text-[.9rem] md:text-[1rem]/[100%] mb-4 lg:mb-[10px]">
-          By using CheckUup, you agree to the following terms:
-        </p>
-        <ul
-          class="text-[.9rem] md:text-[1rem]/[100%] list-outside list-disc ml-5"
-        >
-          <li class="mb-4 lg:mb-[20px]">
-            User Responsibilities: Users must provide accurate information and
-            use the platform responsibly. Misuse, including false emergency
-            alerts or harmful behavior, may result in account suspension.
-          </li>
-          <li class="mb-4 lg:mb-[20px]">
-            Limitations: CheckUup is not responsible for missed alerts, delayed
-            notifications, or any actions taken by users or trusted contacts.
-          </li>
-          <li class="mb-4 lg:mb-[20px]">
-            Emergency Permissions: In certain cases, and based on user consent,
-            CheckUup may alert emergency services. Users must opt-in to this
-            feature.
-          </li>
-          <li class="mb-4 lg:mb-[20px]">
-            Partnerships: Organizations and volunteers partnering with CheckUup
-            agree to uphold ethical standards and maintain confidentiality.
-          </li>
-          <li class="">
-            Updates & Modifications: CheckUup reserves the right to update the
-            app, policies, and services as needed.
-          </li>
-        </ul>
-      </section>
-      <p
-        class="text-[#918C8C] w-[85%] max-w-[975px] mx-auto text-[.9rem] md:text-[1rem]/[100%] mb-16"
-      >
-        By using CheckUup, you acknowledge and accept these terms, ensuring a
-        safe and supportive experience for all users.
-      </p>
       <footer id="footer" class="py-3 bg-white absolute bottom-0 inset-x-0">
         <div class="px-5 md:px-2 pb-5 border-b-1 border-[#3a3a3a]">
           <div
@@ -379,6 +372,56 @@
       };
 
       showNavBtn.addEventListener("click", showNav);
+
+      const form = document.querySelector("form");
+      form.addEventListener("submit", async (e) => {
+        let status
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+        console.log(data);
+        for (key in data) {
+          if (!data[key]) {
+            showMessage(
+              `The ${key} field is required!`,
+              "border-red-500",
+              "bg-red-500"
+            );
+          }
+        }
+        await fetch("contact-us", {
+          method: "post",
+          body: formData,
+        })
+          .then((res) => {
+            status = res.status
+            return res.json()
+        })
+          .then(data => {
+            console.log(data);
+            if (status === 200) {
+            showMessage(data.message, "border-green-500", "bg-green-500")
+          } else {
+            showMessage(data.message, "border-red-500", "bg-red-500")
+          }
+          })
+          .catch((err) => {
+            const message = err.message || "Something went wrong";
+            showMessage(message, "border-red-500", "bg-red-500");
+          });
+      });
+
+      const messageBoxCont = document.querySelector("#messageBox");
+      const messageBox = document.querySelector("#messageBox p");
+      const messageTimer = document.querySelector("#messageTimer");
+      function showMessage(message, border, timerColor) {
+        messageBox.textContent = message;
+        messageBoxCont.classList.add(border, "-translate-x-45", "opacity-100");
+        messageTimer.classList.add(timerColor, "w-full");
+        setTimeout(() => {
+          messageBoxCont.classList.remove(border, "-translate-x-45", "opacity-100");
+          messageTimer.classList.remove(timerColor, "w-full");
+        }, 5000);
+      }
     </script>
   </body>
 </html>
