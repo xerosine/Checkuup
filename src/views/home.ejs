@@ -281,7 +281,7 @@
               class="w-3/4 py-2 px-6 mt-8 mb-6 md:mb-[4.5rem] bg-primary text-white md:text-[1.25rem] lg:text-[1.5rem] rounded-md font-semibold max-w-[270px] lg:max-w-[300px] cursor-pointer"
             >
               <a href="#joinTheMovement" class="block text-center">
-                Join The Movement
+                Join the Movement
               </a>
             </button>
           </div>
@@ -768,7 +768,7 @@
           </div>
         </div>
       </section>
-      <section
+      <!-- <section
         id="testimonials"
         class="h-[57rem] md:h-[69rem] relative text-primary"
       >
@@ -787,7 +787,6 @@
               id="carousel-track"
               class="absolute top-0 left-[50%] -translate-x-[50%] h-[43rem] w-full max-w-[350px] md:max-w-[450px] z-10 flex transition-all duration-500"
             >
-              <!-- Cards -->
               <div
                 class="carousel-card min-w-full px-2 inset-0 text-white transition-all duration-500 rounded-t-xl opacity-50 scale-75"
               >
@@ -1295,7 +1294,6 @@
             </div>
           </div>
 
-          <!-- Dots -->
           <div class="flex justify-center space-x-4 md:space-x-8 mt-10">
             <button
               class="dot w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary"
@@ -1319,7 +1317,7 @@
             ></button>
           </div>
         </div>
-      </section>
+      </section> -->
       <section
         id="downloadNow"
         class="h-[27rem] py-[3rem] sm:my-[4rem] md:mt-[5rem] lg:mt-[6rem] xl:mb-[10rem]"
@@ -2509,8 +2507,6 @@
     <script>
       //responsiveness script
       if (window.innerWidth >= 450 && window.innerWidth < 768) {
-        console.log("450+");
-
         //main intro
         document
           .querySelector("#main-intro")
@@ -2638,36 +2634,36 @@
       });
 
       //testimonials script
-      const caroTrack = document.querySelector("#carousel-track");
-      const caroButtons = document.querySelectorAll(".dot");
-      const caroCards = document.querySelectorAll(".carousel-card ");
-      caroTrack.style.transform = `translateX(-100%)`;
-      let currentIndex = 1;
+      // const caroTrack = document.querySelector("#carousel-track");
+      // const caroButtons = document.querySelectorAll(".dot");
+      // const caroCards = document.querySelectorAll(".carousel-card ");
+      // caroTrack.style.transform = `translateX(-100%)`;
+      // let currentIndex = 1;
 
-      const testiYeet = (index) => {
-        caroTrack.style.transform = `translateX(-${index * 100}%)`;
+      // const testiYeet = (index) => {
+      //   caroTrack.style.transform = `translateX(-${index * 100}%)`;
 
-        caroButtons.forEach((btn) => {
-          btn.classList.replace("bg-primary", "bg-[#d9d9d9]");
-        });
-        caroButtons[index].classList.replace("bg-[#d9d9d9]", "bg-primary");
-        caroCards.forEach((card) => {
-          card.classList.remove("opacity-100", "scale-100");
-        });
-        caroCards[index].classList.add("opacity-100", "scale-100");
-        currentIndex = index;
-      };
+      //   caroButtons.forEach((btn) => {
+      //     btn.classList.replace("bg-primary", "bg-[#d9d9d9]");
+      //   });
+      //   caroButtons[index].classList.replace("bg-[#d9d9d9]", "bg-primary");
+      //   caroCards.forEach((card) => {
+      //     card.classList.remove("opacity-100", "scale-100");
+      //   });
+      //   caroCards[index].classList.add("opacity-100", "scale-100");
+      //   currentIndex = index;
+      // };
 
-      caroButtons.forEach((btn, index) => {
-        btn.addEventListener("click", () => {
-          testiYeet(index);
-        });
-      });
+      // caroButtons.forEach((btn, index) => {
+      //   btn.addEventListener("click", () => {
+      //     testiYeet(index);
+      //   });
+      // });
 
-      setInterval(() => {
-        const index = currentIndex >= 3 ? 1 : ++currentIndex;
-        testiYeet(index);
-      }, 9000);
+      // setInterval(() => {
+      //   const index = currentIndex >= 3 ? 1 : ++currentIndex;
+      //   testiYeet(index);
+      // }, 9000);
 
       //corpart script
       const corpartButtons = document.querySelectorAll(".corpart-btn");
@@ -2676,8 +2672,6 @@
       const corpartSect = document.querySelector(".corpart-sect");
 
       const corpartFn = (index) => {
-        console.log(index);
-
         if (index === 0) {
           corpartButtons[1].classList.remove(
             "text-primary",
@@ -2769,7 +2763,6 @@
       }
 
       const checkAgree = document.querySelector("#agree")
-      console.log(checkAgree);
       
       checkAgree.onclick = (e) => {
         if (e.target.value === 'off') {
@@ -2783,7 +2776,6 @@
           document.querySelector("#joinBtn").classList.replace("bg-[#007aff]", "bg-[#ddd]")
           document.querySelector("#joinBtn").classList.remove("text-white", "cursor-pointer")
         }
-        console.log(e.target.value);
       }
 
       const contactForm = document.querySelector("form");
@@ -2848,9 +2840,6 @@
             return res.json()
           })
           .then(data => {
-            console.log(data);
-            console.log(status);
-            
             if (status === 200) {
             showMessage(data.message, "border-green-500", "bg-green-500")
           } else {
